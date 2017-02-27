@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="307c434f-cfad-46c8-86f2-910a8e6eafec"
+  name="ModelMapping"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="94dd12cc-dadc-45ef-8bbd-101bde913a9d"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DYmtSystem.Repository.EF.ModelMapping"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="98439598-2c32-4465-a3f6-18f692164024"
+        name="IDBMappingRegister"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="ffb74e50-d1ab-4198-921e-2f5de566ff22"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Repository.EF%2Fbin%2FDebug%2FYmtSystem.Repository.EF.dll Namespace%3DYmtSystem.Repository.EF.ModelMapping Type%3DIDBMappingRegister"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f3f360cc-b20b-43c7-9b39-22dfbf6d74c1"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="feba59a5-17e8-48e7-8bae-b1387ead856b">
+                <propertyInstance
+                  Id="91363771-6368-4442-85f9-96e4b151f925"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cd843aee-7af8-4df6-bb9a-6d9411ee29a7">
+                <propertyInstance
+                  Id="92cd6b2e-b4fd-480b-9ce8-d7ad65eb80b6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cb88cd43-be84-4603-a556-a80ddfd85e3e">
+                <propertyInstance
+                  Id="c3306f42-8e59-46bb-9471-13cee3c4c1df"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6db22142-17c2-4fe5-b138-b3bbbf88c9d5">
+                <propertyInstance
+                  Id="84456c93-bd4f-4b17-926b-ac6eb470d673"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

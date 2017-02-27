@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3DE6C02-31F1-4F4C-946B-51729EB4E369}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YmtSystem.Domain.Repository</RootNamespace>
+    <AssemblyName>YmtSystem.Domain.Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\global\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="EF\AsyncEFRepository.cs" />
+    <Compile Include="EF\CreateAndMigrateDatabaseInitializer.cs" />
+    <Compile Include="EF\ModelMapping\DbMappingRepository.cs" />
+    <Compile Include="EF\EFRepositoryException.cs" />
+    <Compile Include="EF\EFRepository.cs" />
+    <Compile Include="EF\EFRepositoryContext.cs" />
+    <Compile Include="EF\IEFRepositoryContext.cs" />
+    <Compile Include="EF\ModelMapping\EntityRegisteService.cs" />
+    <Compile Include="EF\ModelMapping\IDBMappingRegister.cs" />
+    <Compile Include="SortByExtension.cs" />
+    <Compile Include="EF\YmatouDbContext.cs" />
+    <Compile Include="EF\YmatouDbContextInitailizer.cs" />
+    <Compile Include="EF\YmatouDbContextInitailizerTask.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Factory\RepositoryFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YmtSystem.CrossCutting\YmtSystem.CrossCutting.csproj">
+      <Project>{ae7593c5-1c9b-499c-a9e9-a3e6769494a6}</Project>
+      <Name>YmtSystem.CrossCutting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YmtSystem.Domain\YmtSystem.Domain.csproj">
+      <Project>{54f1c834-cce5-46e0-ae2b-0fd16084237e}</Project>
+      <Name>YmtSystem.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YmtSystem.Infrastructure.Task\YmtSystem.Infrastructure.Task.csproj">
+      <Project>{9ca6b543-456b-41d4-90c3-17e6b8d6267d}</Project>
+      <Name>YmtSystem.Infrastructure.Task</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

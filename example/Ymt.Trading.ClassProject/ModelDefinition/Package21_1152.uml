@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="e5f443db-c300-4e31-b524-85fddcac1d59"
+  name="Configuration"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="6da8506d-e4b9-456a-be18-4b7bb432d1da"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Data.Entity.ModelConfiguration.Configuration"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="3fe8a0d8-da0f-4692-a893-5786e1bada8d"
+        name="ConfigurationRegistrar"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="615eef23-2de5-4ed4-b263-c417afad9dab"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fpackages%2FEntityFramework.6.0.2%2Flib%2Fnet45%2FEntityFramework.dll Namespace%3DSystem.Data.Entity.ModelConfiguration.Configuration Type%3DConfigurationRegistrar"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="744f2730-4076-4453-a8e6-e4673efe75ce"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1133372e-0721-460c-b209-2bf1437eb70c">
+                <propertyInstance
+                  Id="5f69253a-8fef-4050-aa89-87dfe58db534"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="949f6097-d72e-4670-aaf1-a42cbe0f6fd2">
+                <propertyInstance
+                  Id="646bfb7b-d9e1-4fc1-b937-8693dd007705"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="598e3d93-6ab9-4868-9c09-6baf3209b41f">
+                <propertyInstance
+                  Id="85e1ee01-8ed9-421e-939c-05a22c74fb58"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c1385387-2d18-4c75-9f23-85b8d09efbf8">
+                <propertyInstance
+                  Id="3c3c8c5d-5067-4283-b4eb-7a4dc2d4ebf3"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="73e78bdd-334f-47b1-b3f2-d536fd0d708d">
+                <propertyInstance
+                  Id="cb757644-1e6d-4c86-9fd3-b67f19c31c12"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

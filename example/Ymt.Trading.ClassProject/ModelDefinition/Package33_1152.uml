@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="25e0be11-87cb-4dae-a332-500e22d1457a"
+  name="CrossCutting"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="b1254c6b-8c97-449d-90f4-18d796901470"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DYmtSystem.CrossCutting"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="4f5948fd-4d14-44cf-950c-ca7a291e21c7"
+        name="TaskContinuation"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="00d77313-9c36-466e-bb3c-10effbce33ac"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.CrossCutting%2Fbin%2FDebug%2FYmtSystem.CrossCutting.dll Namespace%3DYmtSystem.CrossCutting Type%3DTaskContinuation"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f00f3fa3-c77a-4a48-b28f-5355ae880225"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9b363c9a-2316-47be-9096-d8612efd3f14">
+                <propertyInstance
+                  Id="81b3e12d-4db4-4b36-8432-71bba0ebd343"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2ab50a7d-f1ec-4713-ac9d-8904ea693ef2">
+                <propertyInstance
+                  Id="af606543-9ea6-4a4b-8693-42347793e9c3"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="743a1f8d-c65f-4ebd-b144-c8706559ae44">
+                <propertyInstance
+                  Id="c419465b-6d90-4751-88cb-0d4a9abc7ad2"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0a8ab14e-dece-4d75-9787-a351fdebc1d4"
+        name="RegisterServiceBootstrapperTask"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="db359d80-a10a-4b45-a700-3c8cbebfb512"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.CrossCutting%2Fbin%2FDebug%2FYmtSystem.CrossCutting.dll Namespace%3DYmtSystem.CrossCutting Type%3DRegisterServiceBootstrapperTask"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="175e0700-1022-468f-9630-79d7f6c919b1"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d2ce0066-858f-40ce-9b85-6e5a0a7eefb5">
+                <propertyInstance
+                  Id="6e22daa0-32be-4e22-ad44-69c76f7a4cd5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3546c1bf-e1d1-4af8-9561-b6e9498d8abb">
+                <propertyInstance
+                  Id="6efefc76-6895-4011-8514-c0fa3f4eb5f9"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f3fe963b-08c4-4c4a-8613-ee6ce3f4505a">
+                <propertyInstance
+                  Id="f23d8c47-8acc-406e-9178-542d75ed59a4"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fb2852c8-38fd-4477-8952-d4953c2c31a0">
+                <propertyInstance
+                  Id="a01a96fc-f118-4f58-ab8b-3954cd8508fd"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4fbff5f2-177e-4304-a337-5abe60b3d947">
+                <propertyInstance
+                  Id="047aff73-c4e5-49f5-8bc1-6a9e7a087235"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

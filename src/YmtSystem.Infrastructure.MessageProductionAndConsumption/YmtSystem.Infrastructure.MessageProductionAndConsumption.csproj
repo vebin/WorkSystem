@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{220EBD15-0394-4241-8C3C-33BDAE4014C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YmtSystem.Infrastructure.MPAC</RootNamespace>
+    <AssemblyName>YmtSystem.Infrastructure.MessageProductionAndConsumption</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Rxx">
+      <HintPath>..\..\packages\Rxx.1.3.4451.33754\lib\net40\Rxx.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Reactive">
+      <HintPath>..\..\packages\Rx-Main.1.0.11226\lib\Net4\System.Reactive.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlockingBoundedQueue\BlockingBoundedQueue.cs" />
+    <Compile Include="BlockingBoundedQueue\BlockingBoundedQueue2.cs" />
+    <Compile Include="BlockingBoundedQueue\BlockingBoundedQueueSettings.cs" />
+    <Compile Include="BlockingBoundedQueue\BlockingBoundedQueueStatsHelp.cs" />
+    <Compile Include="BlockingBoundedQueue\BlockingBoundedQueueWrapper.cs" />
+    <Compile Include="BlockingBoundedQueue\QueueException.cs" />
+    <Compile Include="BlockingBoundedQueue\QueueKey.cs" />
+    <Compile Include="PriorityQueue\ConcurrentPriorityQueue.cs" />
+    <Compile Include="PriorityQueue\ConcurrentPriorityQueueThreadManager.cs" />
+    <Compile Include="PriorityQueue\PQObject.cs" />
+    <Compile Include="PriorityQueue\PriorityQueueWrapper.cs" />
+    <Compile Include="PriorityQueue\PrioritySortedListQueue.cs" />
+    <Compile Include="PriorityQueue\Settings\PQSettings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reactive\RxxQueue.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\YmtSystem.CrossCutting\YmtSystem.CrossCutting.csproj">
+      <Project>{ae7593c5-1c9b-499c-a9e9-a3e6769494a6}</Project>
+      <Name>YmtSystem.CrossCutting</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

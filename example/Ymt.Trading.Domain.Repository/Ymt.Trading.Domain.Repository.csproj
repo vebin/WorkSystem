@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C06E42AD-26F6-4A51-83D4-27BF3E632F78}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ymt.Trading.Domain.Repository</RootNamespace>
+    <AssemblyName>Ymt.Trading.Domain.Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BankRepository.cs" />
+    <Compile Include="BuyersRepository.cs" />
+    <Compile Include="Mapping\BankMapping.cs" />
+    <Compile Include="Mapping\BuyersMapping.cs" />
+    <Compile Include="Mapping\OrderLineMapping.cs" />
+    <Compile Include="Mapping\T11Mapping.cs" />
+    <Compile Include="Mapping\T14Mapping.cs" />
+    <Compile Include="Mapping\T1Mapping.cs" />
+    <Compile Include="Mapping\T2Mapping.cs" />
+    <Compile Include="Mapping\T5Mapping.cs" />
+    <Compile Include="Mapping\T8Mapping.cs" />
+    <Compile Include="Mapping\UserAccountMapping.cs" />
+    <Compile Include="Mapping\YmtOrderMapping.cs" />
+    <Compile Include="Mapping\YmtUserMapping.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterServiceTask.cs" />
+    <Compile Include="T14Repository.cs" />
+    <Compile Include="T1Repository.cs" />
+    <Compile Include="T2Repository.cs" />
+    <Compile Include="T5Repository.cs" />
+    <Compile Include="T8Repository.cs" />
+    <Compile Include="TradingContext\YmtTradingUnitOfwork.cs" />
+    <Compile Include="YmtOrderRepository.cs" />
+    <Compile Include="YmtUserRepository.cs" />
+    <Compile Include="T11Repository.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\YmtSystem.CrossCutting\YmtSystem.CrossCutting.csproj">
+      <Project>{ae7593c5-1c9b-499c-a9e9-a3e6769494a6}</Project>
+      <Name>YmtSystem.CrossCutting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\YmtSystem.Domain\YmtSystem.Domain.csproj">
+      <Project>{54f1c834-cce5-46e0-ae2b-0fd16084237e}</Project>
+      <Name>YmtSystem.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\YmtSystem.Repository.EF\YmtSystem.Repository.EF.csproj">
+      <Project>{68acdd20-8ea6-4b37-9751-7f863697f636}</Project>
+      <Name>YmtSystem.Repository.EF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ymt.Trading.Domain\Ymt.Trading.Domain.csproj">
+      <Project>{e8aae9e0-f874-4403-9877-a24cb45a40ea}</Project>
+      <Name>Ymt.Trading.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

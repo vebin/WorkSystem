@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A5E611C-1F6A-4345-89E0-45E1E11AED49}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YmtSystem.Infrastructure</RootNamespace>
+    <AssemblyName>Ymatou.Infrastructure.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Unity.Interception.3.0.1304.0\lib\Net45\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration">
+      <HintPath>..\..\packages\Unity.Interception.3.0.1304.0\lib\Net45\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=1.9.1.221, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\mongocsharpdriver.1.9.1\lib\net35\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=1.9.1.221, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\mongocsharpdriver.1.9.1\lib\net35\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AopTest.cs" />
+    <Compile Include="CfgTest.cs" />
+    <Compile Include="CommandBusTest.cs" />
+    <Compile Include="EventStoreTest.cs" />
+    <Compile Include="EventTest.cs" />
+    <Compile Include="Ioc\IocTest.cs" />
+    <Compile Include="Ioc\ITest.cs" />
+    <Compile Include="LocalCacheTest.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterServiceTask.cs" />
+    <Compile Include="RSAEncryptTest.cs" />
+    <Compile Include="RxxTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Config\A.cfg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\db.cfg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\ymtdb.cfg" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Task\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\YmtSystem.CrossCutting\YmtSystem.CrossCutting.csproj">
+      <Project>{ae7593c5-1c9b-499c-a9e9-a3e6769494a6}</Project>
+      <Name>YmtSystem.CrossCutting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\YmtSystem.Domain\YmtSystem.Domain.csproj">
+      <Project>{54f1c834-cce5-46e0-ae2b-0fd16084237e}</Project>
+      <Name>YmtSystem.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\YmtSystem.Infrastructure.Aop\YmtSystem.Infrastructure.Aop.csproj">
+      <Project>{4578f307-b7d3-4f20-9dae-9b0b08dfeeac}</Project>
+      <Name>YmtSystem.Infrastructure.Aop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\YmtSystem.Infrastructure.Cache\YmtSystem.Infrastructure.Cache.csproj">
+      <Project>{9cc98b42-0ab9-4cac-bd3e-077b24d9484a}</Project>
+      <Name>YmtSystem.Infrastructure.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\YmtSystem.Infrastructure.CommandBusService\YmtSystem.Infrastructure.CommandBusService.csproj">
+      <Project>{cedc89e3-9f22-4788-b6b3-5335e5dac375}</Project>
+      <Name>YmtSystem.Infrastructure.CommandBusService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\YmtSystem.Infrastructure.Config\YmtSystem.Infrastructure.Config.csproj">
+      <Project>{acaf52ed-13c4-45f7-83fa-0835889907bc}</Project>
+      <Name>YmtSystem.Infrastructure.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\YmtSystem.Infrastructure.EventBus\YmtSystem.Infrastructure.EventBusService.csproj">
+      <Project>{ae8fc781-1144-4e2a-8730-06b146ee809e}</Project>
+      <Name>YmtSystem.Infrastructure.EventBusService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\YmtSystem.Infrastructure.EventStore\YmtSystem.Infrastructure.EventStore.csproj">
+      <Project>{fb860c80-e8fb-44af-9faf-2503a4f05ee8}</Project>
+      <Name>YmtSystem.Infrastructure.EventStore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\YmtSystem.Infrastructure.MessageProductionAndConsumption\YmtSystem.Infrastructure.MessageProductionAndConsumption.csproj">
+      <Project>{220ebd15-0394-4241-8c3c-33bdae4014c8}</Project>
+      <Name>YmtSystem.Infrastructure.MessageProductionAndConsumption</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\YmtSystem.Repository.EF\YmtSystem.Repository.EF.csproj">
+      <Project>{68acdd20-8ea6-4b37-9751-7f863697f636}</Project>
+      <Name>YmtSystem.Repository.EF</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

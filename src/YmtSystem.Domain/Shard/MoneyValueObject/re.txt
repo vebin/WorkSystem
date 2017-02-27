@@ -1,0 +1,2 @@
+﻿Money 值对象 源项目地址：
+http://www.codeproject.com/Articles/193043/NMoneys-a-Money-Value-Object-implementation-in-NET

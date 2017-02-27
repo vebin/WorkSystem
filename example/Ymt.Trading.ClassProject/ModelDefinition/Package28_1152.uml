@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="db217968-f95b-4c1b-a265-3a05a7c77c2b"
+  name="Specifications"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="86782f7f-5e81-45e1-b18a-21364dbac0cd"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DYmt.Trading.Domain.Specifications"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="7e1ed228-66eb-44ad-9dd2-f58fb6e2efb4"
+        name="OrderSpecifications"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d647c8b0-920e-4f7a-bf21-957d19eeaf68"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain%2Fbin%2FDebug%2FYmt.Trading.Domain.dll Namespace%3DYmt.Trading.Domain.Specifications Type%3DOrderSpecifications"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2f1b5ffc-97d3-4957-bedd-4e30f868fa85"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2848e5e9-0f9a-4a98-bc91-74721b835a60">
+                <propertyInstance
+                  Id="98223125-0786-44f4-9186-2217d52e6f8e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d54050c8-2455-4233-b583-07f2ad7318d8">
+                <propertyInstance
+                  Id="3559e8b9-5296-44f7-95e7-25d7eb38c1b7"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="87d619a7-9efd-4f1b-bf7b-8dec06618304">
+                <propertyInstance
+                  Id="42e99621-dab2-475f-b882-b293aed03f55"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6d036fca-c287-41c7-82a0-43a751d691d2">
+                <propertyInstance
+                  Id="e2d5a9dc-d28d-423c-a3b5-caf5bef072e9"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="633d877c-210c-4e1d-a1ec-c10325b74295">
+                <propertyInstance
+                  Id="e000265a-4d66-463e-9102-3693cd1e21ca"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="530a0c5c-335a-4ef7-bf3c-91d514db55a7"
+            name="OrderSpecifications"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="02c30100-36fd-48e7-8131-e5cf491573f6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain%2Fbin%2FDebug%2FYmt.Trading.Domain.dll Namespace%3DYmt.Trading.Domain.Specifications Type%3DOrderSpecifications Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cf7fefec-69d2-41fd-a7cf-e10c8e36bd26"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08db01d5-6303-44cf-8c56-9a449546b559">
+                    <propertyInstance
+                      Id="bbd62651-e730-4389-a61f-8252852f1bc5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f4f9e74-a0d7-4d16-8b28-44da4a440732">
+                    <propertyInstance
+                      Id="b5143658-50b2-4562-94ae-dd924f3a0c10"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d2f02a1-8676-4b76-8837-73ea68e9c5fd">
+                    <propertyInstance
+                      Id="cd559fb6-3370-423f-b9d4-872795fbb598"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fcf750df-75c2-460b-bc94-b0e7a3f9a866">
+                    <propertyInstance
+                      Id="7cac8b76-88c4-4568-8453-b3222a62efd1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c273e51e-7847-4fd7-8a97-82fbc04f61ae">
+                    <propertyInstance
+                      Id="44bbbc79-1cc3-490b-ae2c-0e4aaedccbda"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea119ce6-06a4-465a-bf46-7d2189955945">
+                    <propertyInstance
+                      Id="b63e6a2a-ff1d-4a1d-a59d-6578c086d95b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="b2ae6e97-94d1-418c-a5cd-daf7cf9f3862"
+            name="Find"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="368565f8-3e96-43ba-84fd-57eaed34c557"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain%2Fbin%2FDebug%2FYmt.Trading.Domain.dll Namespace%3DYmt.Trading.Domain.Specifications Type%3DOrderSpecifications Member%3DFind"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1e8f6102-8735-4c3a-802e-40e176a547ed"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bbb6d9d6-1ee2-4118-878e-0f21bf855f18">
+                    <propertyInstance
+                      Id="6fb0d789-bc0a-4a8f-89b6-ed2fb6274bb6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5ce3e07-f988-46a4-8789-325c7364b0bb">
+                    <propertyInstance
+                      Id="c0192f8a-c143-45d8-9ee4-02e2d83a4942"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b7e9c8f-aa01-47d7-87a0-bc7eed70c046">
+                    <propertyInstance
+                      Id="180966bb-7aff-4849-bbfb-f97d4aa4e885"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d424316-c74b-4f40-b12d-b33906165d37">
+                    <propertyInstance
+                      Id="2ab6209f-49df-4b2a-a29c-a1bca8e8d389"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="768b5374-4429-4683-a55c-0f0ccbf6a671">
+                    <propertyInstance
+                      Id="998c5297-d177-4396-8031-e7c2c1255de1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6084f371-b20f-4c75-8ece-49e0da9800ab">
+                    <propertyInstance
+                      Id="b1c28999-716d-49c6-adca-905707f56df8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5edc6215-c860-4074-b987-6cf3721b02e1"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="d7daee66-a062-45c7-b426-a1baaf353bce"
+                      LastKnownName="ISpecification&lt;YmtOrder‎&gt;"
+                      LastKnownLocation="Package29_1152.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

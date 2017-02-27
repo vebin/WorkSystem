@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="88bfcdeb-5499-4233-9217-80059fffcd18" name="UMLUseCaseDiagram1" linkedPackageId="f959c269-e8c2-4e5d-905a-f0d5aabd27ab" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="7c4738bc-3a1b-4d8c-9203-e350b25fffd4">
+      <profileInstance Id="83aac5ef-b74a-45c3-812b-b010f88d6f15" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="893d4aff-47af-4608-9126-a0355fb64220">
+      <profileInstance Id="c869a799-b58b-412e-b0e5-790bdbbe5b0f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6cae18f7-8899-4c0d-ac27-52a64f6190da">
+      <profileInstance Id="bae18d3e-5e89-40de-ac9b-979236d9e29e" name="CSharpProfile">
+        <elementDefinition Id="291f5df9-cc33-44d3-9fbd-907d7d350149" />
+      </profileInstance>
+      <elementDefinition Id="9d02ec0d-0faf-4bf2-b7eb-7197880f4880" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ae381f2b-d5da-4a19-add0-204bc430a0b6" name="Actor1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="85d313a1-d70c-48c4-83d2-f7cc8f7a1054" />
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="f959c269-e8c2-4e5d-905a-f0d5aabd27ab" name="Ymt.Trading.ClassProject">
+    <elementDefinition Id="1170bd34-c3db-43ae-9d06-4ba46828c985" />
+  </package>
+</useCaseModelRoot>

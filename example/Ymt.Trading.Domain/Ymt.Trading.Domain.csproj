@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8AAE9E0-F874-4403-9877-A24CB45A40EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ymt.Trading.Domain</RootNamespace>
+    <AssemblyName>Ymt.Trading.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RabbitMQ.Client, Version=3.0.4.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\RabbitMQ.Client.3.0.4\lib\net30\RabbitMQ.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ymatou.MQ">
+      <HintPath>..\..\packages\Ymatou.MQ.0.9.43.26137\lib\net40\Ymatou.MQ.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Event\OrderCreateEvent.cs" />
+    <Compile Include="Model\Account\BankAddress.cs" />
+    <Compile Include="Model\Account\UserAccount.cs" />
+    <Compile Include="Model\Account\Bank.cs" />
+    <Compile Include="Model\Order\Order3.cs" />
+    <Compile Include="Model\Order\OrderLine.cs" />
+    <Compile Include="Model\Order\ReceiptAddress.cs" />
+    <Compile Include="Model\Table\T12.cs" />
+    <Compile Include="Model\Table\T13.cs" />
+    <Compile Include="Model\Table\Entity1.cs" />
+    <Compile Include="Model\Table\T1.cs" />
+    <Compile Include="Model\Table\T10.cs" />
+    <Compile Include="Model\Table\T11.cs" />
+    <Compile Include="Model\Table\T2.cs" />
+    <Compile Include="Model\Table\T5.cs" />
+    <Compile Include="Model\Table\T6.cs" />
+    <Compile Include="Model\Table\T7.cs" />
+    <Compile Include="Model\Table\T8.cs" />
+    <Compile Include="Model\Table\T9.cs" />
+    <Compile Include="Model\Table\T14.cs" />
+    <Compile Include="Model\User\Buyers.cs" />
+    <Compile Include="Model\User\Seller.cs" />
+    <Compile Include="Repository\IBankRepository.cs" />
+    <Compile Include="Repository\IBuyers.cs" />
+    <Compile Include="Repository\IT5Repository.cs" />
+    <Compile Include="Repository\IT8Repository.cs" />
+    <Compile Include="Repository\ITRepository.cs" />
+    <Compile Include="Repository\IYmtOrderRepository.cs" />
+    <Compile Include="Model\Order\YmtOrder.cs" />
+    <Compile Include="Repository\IT2Repository.cs" />
+    <Compile Include="Repository\IT11Repository.cs" />
+    <Compile Include="Repository\IT14Repository.cs" />
+    <Compile Include="Specifications\OrderSpecifications.cs" />
+    <Compile Include="Repository\IYmtUserRepository.cs" />
+    <Compile Include="Model\User\YmtUser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\YmtSystem.CrossCutting\YmtSystem.CrossCutting.csproj">
+      <Project>{ae7593c5-1c9b-499c-a9e9-a3e6769494a6}</Project>
+      <Name>YmtSystem.CrossCutting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\YmtSystem.Domain\YmtSystem.Domain.csproj">
+      <Project>{54f1c834-cce5-46e0-ae2b-0fd16084237e}</Project>
+      <Name>YmtSystem.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Service\" />
+    <Folder Include="Shard\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

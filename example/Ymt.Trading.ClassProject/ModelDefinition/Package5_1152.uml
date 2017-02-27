@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="1ea86fe6-4d58-42e3-9ae5-459bf87c835a"
+  name="YmtSystem"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="864a8336-3f5b-41b5-9a26-df43888db587"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DYmtSystem"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4cb0a605-2923-437a-bd74-f67ec9ed1889"
+        LastKnownName="Domain"
+        LastKnownLocation="Package6_1152.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="440e38fe-b37e-4ea2-9428-07d6d89d1244"
+        LastKnownName="Repository"
+        LastKnownLocation="Package22_1152.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="25e0be11-87cb-4dae-a332-500e22d1457a"
+        LastKnownName="CrossCutting"
+        LastKnownLocation="Package33_1152.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

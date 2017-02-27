@@ -1,0 +1,3827 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="541ad177-9650-4cee-9d6b-a35deede2d04"
+  name="Repository"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="538ef1b1-95ff-4c27-9874-6a4dae2f3174"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DYmt.Trading.Domain.Repository"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1145caa5-199d-4420-abe2-d2c637d9e550"
+        LastKnownName="Mapping"
+        LastKnownLocation="Package17_1152.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="23d54ba7-b610-437d-9af0-30954f0a3853"
+        name="BankRepository"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="5f454338-691f-4f28-9070-4ee7d9f9be20"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DBankRepository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4dc78bcd-3e4c-4489-b748-f80689b0b2d5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c62245d9-c79b-4f89-8d53-b2f71c9bcf10">
+                <propertyInstance
+                  Id="c7905a9d-cd5f-40b0-a01e-a3cfc458fefb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="412c7e8b-a53e-457e-97cc-8e67fd2c185d">
+                <propertyInstance
+                  Id="bb1b3a0d-80ac-4864-952b-d92ef4aa8634"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8a6734cf-0fe2-403d-a258-f38197dfc87f">
+                <propertyInstance
+                  Id="96cccbd9-4541-4b98-b3a2-f3dd7de5ed9c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="501a6be2-cd6b-4018-83fc-1e1bbadc0fc0">
+                <propertyInstance
+                  Id="d84f90c6-6c96-40d8-aa9a-669f97734a2e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="12550cb0-4997-4c90-8489-5375fb3670e7">
+                <propertyInstance
+                  Id="f869a633-3e5f-49c2-b67e-238c01dde3bb"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="5baa1d1d-7105-408e-8fa1-7627f2ef1681">
+            <interfaceMoniker
+              Id="875a360f-a25d-4999-961e-b0a4672b43cf"
+              LastKnownName="IBankRepository"
+              LastKnownLocation="Package16_1152.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="7837a3a3-28b5-444b-b1cd-c01e370fddad"
+            isSubstitutable="false">
+            <classMoniker
+              Id="eb48ea35-3199-46b9-a000-d3da9a2c1dfe"
+              LastKnownName="EFRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="dfdd9944-5743-47e7-8445-5283f2ac07c1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7d38f359-30e5-4db8-8530-d0f986a89d53"
+              LastKnownName="EFRepository"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="9e376601-2bf6-4df9-b27f-490aef70be29"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c588b7f7-d8b1-40ec-bcf7-5bdb5d0861e6"
+              LastKnownName="EFRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="ce4f13c6-a5b6-4208-9498-8b31cf9ff209"
+            isSubstitutable="false">
+            <classMoniker
+              Id="26f10421-6513-4f22-b425-67042856f4cc"
+              LastKnownName="EFRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="f64c89d9-4b26-41ae-a79e-e51edfd6b548"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5df78220-2c98-4681-88d4-a3196973af86"
+              LastKnownName="EFRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="de0e04e5-c2c7-4da5-b1d8-dd75a7dbe542"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9e3d8eed-3b45-4f9d-b4fa-0003eca6995e"
+              LastKnownName="EFRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="d2c853d7-0ae1-4477-ab89-8b33ad623802"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e4895ba3-c1f5-450a-b2c5-04aed9e47d61"
+              LastKnownName="EFRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="baaab0ba-1ee6-4759-bdd4-6263539c653b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2864c87b-f561-49f8-83dc-0ed12254a483"
+              LastKnownName="EFRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="9f9fe42f-6437-46e9-ad91-7f02415da3a5"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a2dfab1f-2ce0-4f6c-851e-6ab1fc960f4b"
+              LastKnownName="EFRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="e93259fe-f60b-4e43-8f0c-5bfda3aff737"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b5d9cca8-0bc5-4fb7-986f-d70bd1a708be"
+              LastKnownName="EFRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="e8bd2466-e24c-43b1-843d-c61ec0288fdc"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0eda955c-090f-420a-b2a6-4d4daefd9c2b"
+              LastKnownName="EFRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ba4c2846-279a-4a5b-965a-97c9895c7528"
+            name="BankRepository"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a95c996e-6875-4af4-bf3f-a65d92db7189"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DBankRepository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b6fec137-f2fb-46bc-95b5-2e9976a09825"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48efe8da-7821-4293-9e53-1fba5cdac0f6">
+                    <propertyInstance
+                      Id="a2ae20e4-d1c1-47fb-b92a-16a3ff2affe6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e20e1880-0163-4841-bed3-c3f3caf8fff5">
+                    <propertyInstance
+                      Id="69351843-3a57-48be-b699-1a270441fe89"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e10f3d51-1032-4627-ba4c-47a0ec1c0fb2">
+                    <propertyInstance
+                      Id="d092a3ae-773a-494f-b602-b0d02dbf81d3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9e197e0-ac36-46f6-9470-4263a5081cc1">
+                    <propertyInstance
+                      Id="75993c83-0204-48ad-8cf8-6093af895ee3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="adc68827-db2a-4323-9c97-01497e054638">
+                    <propertyInstance
+                      Id="137476d5-cab4-439a-8a23-fc91c39e1ea9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c31fe623-fdad-4146-a4a1-c9a6c95e02d8">
+                    <propertyInstance
+                      Id="dcdf222e-f481-42c5-aff8-f055f5391bc0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="91c00c05-7acb-4a7e-bcd9-e30bc760d3f6"
+                  name="context"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a7937886-8f9c-4e7b-bf33-8ae7885b8e6e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DBankRepository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)]) ParameterIdentifier%3Dcontext"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="62737aca-bb8b-4a28-97df-aa7a36892968"
+                      LastKnownName="IRepositoryContext"
+                      LastKnownLocation="Package25_1152.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="875a360f-a25d-4999-961e-b0a4672b43cf"
+        name="IBankRepository"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="8f2e7a5b-ea63-435d-a87d-7ca314273e20"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain%2Fbin%2FDebug%2FYmt.Trading.Domain.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DIBankRepository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0411bca2-3755-4aae-b70f-8597f4bafcd6"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e53997d5-12d4-405f-b019-9e0c7cd1ae73">
+                <propertyInstance
+                  Id="9c1e6ad1-180f-4db9-b27c-c77f5184a7a8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dd8ebf7f-249a-4b0b-bf48-9f25b8edb23a">
+                <propertyInstance
+                  Id="30b6035b-bbdd-4e78-8021-ef10dfc1ed3f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="77d5438b-bc73-4f8c-95a2-7d91465f8785">
+                <propertyInstance
+                  Id="888e86ae-635f-49f3-a3b3-3c4dbae2a63b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b1309d82-714d-47b1-9d37-c138ae75883f">
+                <propertyInstance
+                  Id="8e1d6fa3-09b3-44ad-8150-be49a3f9478f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="0a029bf4-4efd-4316-8452-a367008d5656"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="9b193ca4-ed18-4883-9cf1-d99974c0e5ed"
+              LastKnownName="IRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="8878dba2-5436-4b37-a56c-10116ffe7673"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="6744f8a5-a587-4635-8be4-a0a6a04df4c0"
+              LastKnownName="IRepository"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="961c6258-8c58-4d17-aece-e5c437d5193f"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="acfc7076-da2a-4112-b260-2ec19a3229ee"
+              LastKnownName="IRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="f8e551c6-9286-4f3f-9f46-b9977d877564"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="e2e81bf5-1f6b-444c-ad2d-1842b3159e3c"
+              LastKnownName="IRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="8720ba1e-95fc-4686-86b4-0a6fb86c485c"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="d01aa30c-f893-422d-9862-04724ddfe227"
+              LastKnownName="IRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="38b80b38-c962-4273-b2e8-84267f2f46e3"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="d2653ce9-7e8e-43c8-bf23-bfe74fdb403d"
+              LastKnownName="IRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="935bdd24-72a6-4040-b38e-f994dfbb0025"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="c6a4a282-692c-478e-a11f-8e27aed71933"
+              LastKnownName="IRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="01345795-0adb-4873-bd06-88d0aaa86861"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="faf349d1-6b67-483e-9421-a73a45426dc0"
+              LastKnownName="IRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="b02a42b4-40f1-4f8b-9e7a-7adbb9ca0862"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="87869911-feb9-4e64-b76d-1b0bb829aaf4"
+              LastKnownName="IRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="0515e91e-7dd1-4f7c-9823-49c96e4890c8"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="3d0638b2-50f1-476c-9c15-4c3e58c5ba98"
+              LastKnownName="IRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="49363c1e-9c4f-4150-a609-d44a5f853129"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="239fc752-07e9-4829-be0d-9bbef409b04e"
+              LastKnownName="IRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8121c7e3-a8a9-4f6c-a8e8-be3a5cd93b9f"
+        name="BuyersRepository"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="cd3866fe-c264-4814-9f8b-2e20619993e5"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DBuyersRepository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a387622f-aed9-4894-8567-e3576fa42d27"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e178ff9a-0a8a-45f9-b0f6-ec33d95369aa">
+                <propertyInstance
+                  Id="5e293270-397e-42d3-9a26-6daa58225d61"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f4778314-9497-41b8-8831-24d278d3faf1">
+                <propertyInstance
+                  Id="ef1db97c-4d2d-4ddc-b6fb-34d530cd8710"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b058fe90-f611-47da-a22f-3d24d3548d17">
+                <propertyInstance
+                  Id="01b29f69-a609-4bbf-8450-1657dcb73ff4"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a209588c-7d01-4386-80ac-904649f63a3b">
+                <propertyInstance
+                  Id="392b6e4e-1095-4bd2-b5bd-1134dd71577e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4ac3c494-c5e6-4f82-83f6-fa407a26a148">
+                <propertyInstance
+                  Id="b8a6d4d6-d461-4ec3-843f-9f08602bae0b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="a93bc624-e69e-4e2b-a04f-cf2cde44991a">
+            <interfaceMoniker
+              Id="0d296c17-4a79-443c-a282-5fc4ddb0c823"
+              LastKnownName="IBuyersRepository"
+              LastKnownLocation="Package16_1152.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="4550ff38-273b-40a6-9bc6-2ac502055525"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c588b7f7-d8b1-40ec-bcf7-5bdb5d0861e6"
+              LastKnownName="EFRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="1fc87567-b168-4338-a6ea-2265fc43da47"
+            isSubstitutable="false">
+            <classMoniker
+              Id="eb48ea35-3199-46b9-a000-d3da9a2c1dfe"
+              LastKnownName="EFRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="636c02db-3d5a-4371-a780-6d34226499e1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7d38f359-30e5-4db8-8530-d0f986a89d53"
+              LastKnownName="EFRepository"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="2e77e87c-adfb-48f6-95d5-d5ec7706b67e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="26f10421-6513-4f22-b425-67042856f4cc"
+              LastKnownName="EFRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="ebacf047-3059-47d2-8e2c-23e5074e2664"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5df78220-2c98-4681-88d4-a3196973af86"
+              LastKnownName="EFRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="3bbd5050-9f72-4e98-8a23-25744a48a6b6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9e3d8eed-3b45-4f9d-b4fa-0003eca6995e"
+              LastKnownName="EFRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="df5a689b-13ca-46d1-9695-1e151888cca1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e4895ba3-c1f5-450a-b2c5-04aed9e47d61"
+              LastKnownName="EFRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="63c77644-1452-4f04-a20e-8f913c6a9355"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2864c87b-f561-49f8-83dc-0ed12254a483"
+              LastKnownName="EFRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="023077d6-aa34-4039-af49-b116a0654601"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a2dfab1f-2ce0-4f6c-851e-6ab1fc960f4b"
+              LastKnownName="EFRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="f6b9ae59-6d0b-4285-80a9-367a8c38fe7e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b5d9cca8-0bc5-4fb7-986f-d70bd1a708be"
+              LastKnownName="EFRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="60db0ec8-0925-4204-bd9d-7334cedbddee"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0eda955c-090f-420a-b2a6-4d4daefd9c2b"
+              LastKnownName="EFRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e0cc08d4-62b6-4c8d-bfa8-9f063bb163cf"
+            name="BuyersRepository"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="911b2e75-0843-4a44-861a-05dd1a9703d4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DBuyersRepository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="222021e3-1aba-4071-b70a-8e333c2932bb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d615d4a-bdfd-409b-99af-e9440fbcb3ea">
+                    <propertyInstance
+                      Id="15b60eb4-30cf-4596-bdf7-2e690d379a9c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2b81ff6-1dec-4c62-a554-1afedc72987b">
+                    <propertyInstance
+                      Id="1ee662ee-a4b0-41d1-aaf1-db8835fe2d92"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35fd7237-22ed-462a-91d8-27700ca79f1b">
+                    <propertyInstance
+                      Id="1d0b8ebe-6c06-4689-abad-869e9dc53b4e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4000d81-bcc7-4fed-830a-132cda4a2143">
+                    <propertyInstance
+                      Id="928c1462-cc00-4622-afaf-fbea82ba941a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a48aa5a-7be0-474c-a729-1f3826728b5f">
+                    <propertyInstance
+                      Id="4fc53fd9-9a43-4bdc-aef8-7fd55be31e74"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00841c6a-44fa-44ed-b17e-720e3f91a4d1">
+                    <propertyInstance
+                      Id="eb185d4f-c1a7-4cec-ba39-22f8cf64d5c6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f9684cee-aeef-453b-9a01-b4a17c7435a0"
+                  name="context"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="19d86e2f-a01a-4cd7-add0-c1b7e47ba667"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DBuyersRepository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)]) ParameterIdentifier%3Dcontext"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="62737aca-bb8b-4a28-97df-aa7a36892968"
+                      LastKnownName="IRepositoryContext"
+                      LastKnownLocation="Package25_1152.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="0d296c17-4a79-443c-a282-5fc4ddb0c823"
+        name="IBuyersRepository"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="21ae3fa9-40e6-4b89-970f-69e9386892a0"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain%2Fbin%2FDebug%2FYmt.Trading.Domain.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DIBuyersRepository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="af191a30-cfcc-4f9d-9dfd-e69857ac29d7"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ff6ce006-cca5-46b2-9afa-53ea5dff9b89">
+                <propertyInstance
+                  Id="14e8d5dd-b7e6-4478-89d7-1d510f99d601"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fbe71a46-2c5e-4097-9c90-34f913942efa">
+                <propertyInstance
+                  Id="8f337983-a1ce-453d-9e15-5e1f0a6c9895"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="22769db7-5958-49a7-a3b1-95055f0f8bb1">
+                <propertyInstance
+                  Id="caf42100-6fe6-4a9f-81c2-3f73d62520f2"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ec2ea10c-b260-4a89-90c5-d117e135df0f">
+                <propertyInstance
+                  Id="2f6b060d-f76c-4836-8d31-ea122da9afcc"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="c525b2d1-ad62-4c9b-8cfa-6f01088ddf00"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="acfc7076-da2a-4112-b260-2ec19a3229ee"
+              LastKnownName="IRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="90db46d6-89f7-4fea-be96-069175c6a2c2"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="9b193ca4-ed18-4883-9cf1-d99974c0e5ed"
+              LastKnownName="IRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="44efd809-ce3f-4e89-af6d-908024afe8e5"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="6744f8a5-a587-4635-8be4-a0a6a04df4c0"
+              LastKnownName="IRepository"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="dad5c2a2-4343-4226-9b4e-16f80ed5bb14"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="e2e81bf5-1f6b-444c-ad2d-1842b3159e3c"
+              LastKnownName="IRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="2baec907-ec2d-4497-bf32-236fbd53d75a"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="d01aa30c-f893-422d-9862-04724ddfe227"
+              LastKnownName="IRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="4c5dc149-e906-486c-8178-ccc5bc226213"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="d2653ce9-7e8e-43c8-bf23-bfe74fdb403d"
+              LastKnownName="IRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="9a7dd7f0-6618-4829-8bd2-e0b09bcb9c40"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="c6a4a282-692c-478e-a11f-8e27aed71933"
+              LastKnownName="IRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="3a5d2549-cb00-4e10-9954-55c0ad8bf759"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="faf349d1-6b67-483e-9421-a73a45426dc0"
+              LastKnownName="IRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="3f9910aa-cfd9-4d9a-8216-7e36e62b280d"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="87869911-feb9-4e64-b76d-1b0bb829aaf4"
+              LastKnownName="IRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="c18aff47-197d-41e7-9b2e-98e220f5a9b6"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="3d0638b2-50f1-476c-9c15-4c3e58c5ba98"
+              LastKnownName="IRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="eef0004b-41ce-4a84-be5a-4f5eb3971dd1"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="239fc752-07e9-4829-be0d-9bbef409b04e"
+              LastKnownName="IRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="9d229fe4-9e6d-4f84-9e5f-fd54b1397b4a"
+        name="IT11Repository"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="6963210b-e0bb-4fa2-a52c-d0974c069a7a"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain%2Fbin%2FDebug%2FYmt.Trading.Domain.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DIT11Repository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="caae3a26-eda8-43dd-ba09-29372f5f6b7f"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0a0c2a98-836d-4e8d-9810-46316c647a55">
+                <propertyInstance
+                  Id="c97180a8-bba6-42b5-926a-40606a55d75b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bb8846ea-98c6-4824-b8a6-e3a1094c0077">
+                <propertyInstance
+                  Id="6e989ed7-6c3d-4cbf-8e9f-ef6ffa48e297"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b6d7e795-1933-45f9-b14a-c19f82f661bd">
+                <propertyInstance
+                  Id="ef3dc544-10f1-4cdc-b5af-f3b1f985e5bf"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="862b19d2-3243-41c6-86f3-76f0a0250aed">
+                <propertyInstance
+                  Id="a397a171-edd9-4cac-b797-996844e4718f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="94aac666-4a9e-4eae-9add-a8d6a912c384"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="e2e81bf5-1f6b-444c-ad2d-1842b3159e3c"
+              LastKnownName="IRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="ee02cc39-7df4-42e2-a70a-86f702851f8d"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="9b193ca4-ed18-4883-9cf1-d99974c0e5ed"
+              LastKnownName="IRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="3f853889-c0b6-480b-ba25-7b832592093a"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="6744f8a5-a587-4635-8be4-a0a6a04df4c0"
+              LastKnownName="IRepository"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="9a23cf3b-f36d-431e-a495-54802c2fb56f"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="acfc7076-da2a-4112-b260-2ec19a3229ee"
+              LastKnownName="IRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="8c2dc62a-13f3-479b-aa47-da008afbd9c2"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="d01aa30c-f893-422d-9862-04724ddfe227"
+              LastKnownName="IRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="938efe06-0bdd-4988-82f7-f3f2ed88b772"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="d2653ce9-7e8e-43c8-bf23-bfe74fdb403d"
+              LastKnownName="IRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="0d6cf1ed-4a42-40a7-8fc7-96f088ee8801"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="c6a4a282-692c-478e-a11f-8e27aed71933"
+              LastKnownName="IRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="2a6c1672-e3b7-4253-86cb-3a97fb587ca8"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="faf349d1-6b67-483e-9421-a73a45426dc0"
+              LastKnownName="IRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="3d72d97b-e5ea-4b30-aa9d-82e4c51786b8"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="87869911-feb9-4e64-b76d-1b0bb829aaf4"
+              LastKnownName="IRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="de4a34fc-0495-4b4c-aded-c125f6185e74"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="3d0638b2-50f1-476c-9c15-4c3e58c5ba98"
+              LastKnownName="IRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="0ea7cb3c-7be8-4549-ab0d-0a4d5f653772"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="239fc752-07e9-4829-be0d-9bbef409b04e"
+              LastKnownName="IRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="234801d9-205b-4345-9b47-83bdaf0c0f59"
+        name="IT2Repository"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="3941f8a8-3702-48af-a2ab-18e953f733ba"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain%2Fbin%2FDebug%2FYmt.Trading.Domain.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DIT2Repository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9b31ea08-8866-45d1-a991-4d048e2de86d"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c97a00fd-28d4-4cc3-a4ae-0749bf15060a">
+                <propertyInstance
+                  Id="c86fe550-4b5d-4a02-b95d-d59c9ff70fd8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e53c35ae-73c8-459e-860d-706cd129d2ba">
+                <propertyInstance
+                  Id="bfb90eda-ce1e-423a-914e-c7a4af805e78"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b275bb1e-634c-4a65-97e4-0de316f9a4bf">
+                <propertyInstance
+                  Id="2f729394-79a9-474b-8075-ecc9ecf73197"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c1e8eb50-02ce-427a-b01f-8af886e6a579">
+                <propertyInstance
+                  Id="8176c6ea-5938-4ba6-8864-333411e5def7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="4838130b-9097-44e2-8643-2899eac7974e"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="d01aa30c-f893-422d-9862-04724ddfe227"
+              LastKnownName="IRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="fc57c699-0b4a-4319-8ad2-0611dde99edc"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="9b193ca4-ed18-4883-9cf1-d99974c0e5ed"
+              LastKnownName="IRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="12624075-8c6b-4c16-9185-392ccda344e2"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="6744f8a5-a587-4635-8be4-a0a6a04df4c0"
+              LastKnownName="IRepository"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="8cf32b23-f3c4-49a2-8f73-c3ca25614891"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="acfc7076-da2a-4112-b260-2ec19a3229ee"
+              LastKnownName="IRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="9ebea024-317a-48fd-8c6d-16a2b67ff80b"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="e2e81bf5-1f6b-444c-ad2d-1842b3159e3c"
+              LastKnownName="IRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="d64cda16-801f-467d-822b-055b9eab741c"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="d2653ce9-7e8e-43c8-bf23-bfe74fdb403d"
+              LastKnownName="IRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="3c9f1053-b22c-4341-9c62-2148ae130263"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="c6a4a282-692c-478e-a11f-8e27aed71933"
+              LastKnownName="IRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="f9ab5c3e-d004-4931-9cee-67ffdb0e14a1"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="faf349d1-6b67-483e-9421-a73a45426dc0"
+              LastKnownName="IRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="bc2c2ed2-75bf-458e-9268-487d47957929"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="87869911-feb9-4e64-b76d-1b0bb829aaf4"
+              LastKnownName="IRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="ec0e1f32-6916-413f-b677-5c53a3d8797d"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="3d0638b2-50f1-476c-9c15-4c3e58c5ba98"
+              LastKnownName="IRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="532340b7-3c8d-4ad1-838d-60cc654acf3f"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="239fc752-07e9-4829-be0d-9bbef409b04e"
+              LastKnownName="IRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="5178e5ae-c69f-4383-a3ef-605411c9edd2"
+        name="IT5Repository"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="0f366228-04d9-405e-8592-eb8684b1f090"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain%2Fbin%2FDebug%2FYmt.Trading.Domain.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DIT5Repository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="63da6d97-4bb7-427f-9765-e467d9538f2f"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1f9a7f22-c88b-4e4b-8e9e-4d3f6f596b5f">
+                <propertyInstance
+                  Id="3a8b883d-db89-4f35-ba0d-0f803b39c598"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b2c593d1-8cf2-4276-a66a-b9d820dc8736">
+                <propertyInstance
+                  Id="11a78a2b-c41e-4e18-896b-78292adb3d55"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3cf8b3ab-b4ae-4544-89be-750a288f2563">
+                <propertyInstance
+                  Id="62309db3-e3a9-4c1c-b785-7335a5ecd1cc"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ed3abdc7-80f2-4fb6-a9ef-348708e3de9c">
+                <propertyInstance
+                  Id="04fe1a6e-c6c8-4b09-938d-7aaf858bdd91"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="895ad3f9-0d64-468d-80d9-54ed120c5bee"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="d2653ce9-7e8e-43c8-bf23-bfe74fdb403d"
+              LastKnownName="IRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="aa668d43-1e17-4adf-ae66-ce88151fb6ce"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="9b193ca4-ed18-4883-9cf1-d99974c0e5ed"
+              LastKnownName="IRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="73bb2d82-67c0-4d07-88e6-0b4d961ca9b2"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="6744f8a5-a587-4635-8be4-a0a6a04df4c0"
+              LastKnownName="IRepository"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="58d909dc-6987-4775-b3e6-749e1fa678a8"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="acfc7076-da2a-4112-b260-2ec19a3229ee"
+              LastKnownName="IRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="a2da58ec-f926-4702-b974-b9fe94f2d8c9"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="e2e81bf5-1f6b-444c-ad2d-1842b3159e3c"
+              LastKnownName="IRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="f8906a26-e985-4023-927b-c2662112e3d1"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="d01aa30c-f893-422d-9862-04724ddfe227"
+              LastKnownName="IRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="089e4782-556e-47f7-8e7e-1980cd2a72f8"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="c6a4a282-692c-478e-a11f-8e27aed71933"
+              LastKnownName="IRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="0acbeb51-7a1b-41de-9d38-548a19e27f48"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="faf349d1-6b67-483e-9421-a73a45426dc0"
+              LastKnownName="IRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="2bdc48db-d891-4bc7-9b37-3da3b0c711b2"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="87869911-feb9-4e64-b76d-1b0bb829aaf4"
+              LastKnownName="IRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="0316a3fc-3173-4e1d-8452-794366389698"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="3d0638b2-50f1-476c-9c15-4c3e58c5ba98"
+              LastKnownName="IRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="29e850a8-fd7b-463a-addc-24f1d6e72b82"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="239fc752-07e9-4829-be0d-9bbef409b04e"
+              LastKnownName="IRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b021511b-74ba-45d1-90f5-4388f5a06273"
+        name="IT6Repository"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="99b6151b-fa47-417c-9703-977f0099699d"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain%2Fbin%2FDebug%2FYmt.Trading.Domain.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DIT6Repository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="748875ae-5dc0-4498-86aa-0b0e93c81e44"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a486e7f8-ff10-4e8b-b31a-aea777bf0cb5">
+                <propertyInstance
+                  Id="53a002cf-149a-4deb-a484-8ee400f33b17"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dc05b99a-9d05-4b6b-991f-47a8622a5815">
+                <propertyInstance
+                  Id="01d612a3-9641-4107-bc4a-36dc00b92559"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="93b4b721-466a-40ef-be8e-406d012ce348">
+                <propertyInstance
+                  Id="152b33f1-7fe1-41fe-b0c4-49098c576563"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c14df418-dbcb-4403-9264-d27476aeae24">
+                <propertyInstance
+                  Id="a6c554a4-a62d-4ac3-a406-85ded52d144f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="98f163eb-55a2-46f5-9816-a199d175c737"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="c6a4a282-692c-478e-a11f-8e27aed71933"
+              LastKnownName="IRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="d78f57d3-f64e-4e77-827b-3cfe2413cd79"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="9b193ca4-ed18-4883-9cf1-d99974c0e5ed"
+              LastKnownName="IRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="2f6fb01c-b83f-4507-80f5-08da79879fbb"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="6744f8a5-a587-4635-8be4-a0a6a04df4c0"
+              LastKnownName="IRepository"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="c1647fee-cdc7-4313-9943-b1afcc5e2718"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="acfc7076-da2a-4112-b260-2ec19a3229ee"
+              LastKnownName="IRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="2c0f2091-c76e-440c-a3e6-aa0b84d92d0e"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="e2e81bf5-1f6b-444c-ad2d-1842b3159e3c"
+              LastKnownName="IRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="7e40722b-03ac-463d-af5b-e93f728a176e"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="d01aa30c-f893-422d-9862-04724ddfe227"
+              LastKnownName="IRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="5ee6942e-eb3b-4513-bce9-5c9eddc4acaf"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="d2653ce9-7e8e-43c8-bf23-bfe74fdb403d"
+              LastKnownName="IRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="281df282-ed74-4852-88f2-376544786856"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="faf349d1-6b67-483e-9421-a73a45426dc0"
+              LastKnownName="IRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="9ee2447f-9ba8-4c10-a0fb-be0c3568005b"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="87869911-feb9-4e64-b76d-1b0bb829aaf4"
+              LastKnownName="IRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="360a6e34-8d89-4d3c-8abe-dcbccb7829f0"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="3d0638b2-50f1-476c-9c15-4c3e58c5ba98"
+              LastKnownName="IRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="ee80561e-5130-446e-b987-e921aa317362"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="239fc752-07e9-4829-be0d-9bbef409b04e"
+              LastKnownName="IRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="bd0f5532-b995-4883-a0eb-af8147f607ce"
+        name="IT8Repository"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="25a5d8f5-9754-49e4-b96d-e3cd1fc323b0"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain%2Fbin%2FDebug%2FYmt.Trading.Domain.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DIT8Repository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="05e267fe-1973-4231-941a-d147b2de76ee"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9c043014-450d-4b71-a1eb-7d913054e6d0">
+                <propertyInstance
+                  Id="d6a3cec4-3880-4b81-b5cc-06c4631b6304"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9e3ad7d5-6880-448f-ac13-dd5ce0e5d166">
+                <propertyInstance
+                  Id="ef1f6f53-9b8f-4f54-8af2-af596695fd75"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="36f174b2-95fc-488f-aae8-a61de2fcee63">
+                <propertyInstance
+                  Id="ea1f7d4c-09c4-4193-a92b-b74fc330ad99"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2d2513f1-feef-4051-9e80-927b11d0950b">
+                <propertyInstance
+                  Id="3f195d22-f4cb-48bb-b548-d351123bece6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="295d9242-1a7a-4b38-b282-6abbf4b9dfbe"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="faf349d1-6b67-483e-9421-a73a45426dc0"
+              LastKnownName="IRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="3e988679-de21-420b-9754-89ca19b00486"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="9b193ca4-ed18-4883-9cf1-d99974c0e5ed"
+              LastKnownName="IRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="13e3752b-f598-428f-8ffb-4dd589705e35"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="6744f8a5-a587-4635-8be4-a0a6a04df4c0"
+              LastKnownName="IRepository"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="3b3abb3c-f66a-49fb-a8b3-bb746907c463"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="acfc7076-da2a-4112-b260-2ec19a3229ee"
+              LastKnownName="IRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="e348197f-e2fe-431f-a6b3-1f83aa70ed8f"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="e2e81bf5-1f6b-444c-ad2d-1842b3159e3c"
+              LastKnownName="IRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="315c2215-7ffc-44ef-83b0-f4a25ff3017b"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="d01aa30c-f893-422d-9862-04724ddfe227"
+              LastKnownName="IRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="513d59c8-9c95-4311-b40d-0909d9b0e960"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="d2653ce9-7e8e-43c8-bf23-bfe74fdb403d"
+              LastKnownName="IRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="137d0ed6-0318-456e-8f97-e43c201ebda7"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="c6a4a282-692c-478e-a11f-8e27aed71933"
+              LastKnownName="IRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="9cd3513e-79b5-4653-bebc-352c40f26041"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="87869911-feb9-4e64-b76d-1b0bb829aaf4"
+              LastKnownName="IRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="624c9116-7ead-4230-be9f-2b4ff997e762"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="3d0638b2-50f1-476c-9c15-4c3e58c5ba98"
+              LastKnownName="IRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="256dd0a9-7c57-4092-94a9-4bb68a227557"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="239fc752-07e9-4829-be0d-9bbef409b04e"
+              LastKnownName="IRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="73224659-6722-4aef-aa81-b2c65b7f4398"
+        name="ITRepository"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="61e71513-4e7a-4aa0-ae47-75fd5db6eb83"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain%2Fbin%2FDebug%2FYmt.Trading.Domain.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DITRepository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="43a21ebd-6158-4423-b534-0fb1cb11f0c2"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="41a8befa-e8c1-45e4-9c6c-207e8798a53c">
+                <propertyInstance
+                  Id="ceee080c-917a-4f82-b434-52f79262c15e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ec5d7545-a553-4f7c-a8c1-79db6c4f87f3">
+                <propertyInstance
+                  Id="545b2217-e7df-4661-93c0-954e974d5686"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="684bd082-5c3e-482c-8f3b-e25a04954f62">
+                <propertyInstance
+                  Id="da5b4000-857f-4ab5-8392-1aba630d2946"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="be5542df-b9b1-4a6c-96fd-6a0b71104b0f">
+                <propertyInstance
+                  Id="689ebd49-665b-41d7-a96f-7dac249e3c1c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="76005201-9054-4bd2-a3e5-88be5acea443"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="87869911-feb9-4e64-b76d-1b0bb829aaf4"
+              LastKnownName="IRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="74b21d4c-023e-4322-9e4f-0a45d76c0a70"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="9b193ca4-ed18-4883-9cf1-d99974c0e5ed"
+              LastKnownName="IRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="f72a2c63-69c0-400b-8a95-abfe2c9ca51b"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="6744f8a5-a587-4635-8be4-a0a6a04df4c0"
+              LastKnownName="IRepository"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="f217291e-3254-41a7-b20a-18f63e4930df"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="acfc7076-da2a-4112-b260-2ec19a3229ee"
+              LastKnownName="IRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="1b83537f-0702-48d2-bdb0-561ce379ce76"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="e2e81bf5-1f6b-444c-ad2d-1842b3159e3c"
+              LastKnownName="IRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="74edf49f-f939-41ce-88c3-8e8ba83ce471"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="d01aa30c-f893-422d-9862-04724ddfe227"
+              LastKnownName="IRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="960ab4bc-30ac-4a77-8518-0f0f3f626a70"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="d2653ce9-7e8e-43c8-bf23-bfe74fdb403d"
+              LastKnownName="IRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="9b74233c-2cdc-4349-a6bd-c01c118096b7"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="c6a4a282-692c-478e-a11f-8e27aed71933"
+              LastKnownName="IRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="f9c5da21-d0fb-4fc8-8057-8568c72012fe"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="faf349d1-6b67-483e-9421-a73a45426dc0"
+              LastKnownName="IRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="0b48b0ee-2b94-4715-bfb7-796674b3d6c5"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="3d0638b2-50f1-476c-9c15-4c3e58c5ba98"
+              LastKnownName="IRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+          <generalization
+            Id="d2c7498a-4962-4344-9a6d-7c901dbffbb3"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="239fc752-07e9-4829-be0d-9bbef409b04e"
+              LastKnownName="IRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package25_1152.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6416e16e-d3da-4839-814f-afaadfdc7b52"
+        name="RegisterServiceTask"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e0248d0a-1aad-4a01-a64f-a187025135d6"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DRegisterServiceTask"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="672e035a-f8cc-4a7d-9f39-65cf59931e21"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6cfbd1c0-add6-4758-ac62-a1c2bf06ff73">
+                <propertyInstance
+                  Id="97348ca4-c822-418c-bd24-d3ca82831e75"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="72d63295-6a15-42bb-bec9-8a4599aeb0f3">
+                <propertyInstance
+                  Id="1d575e5c-bdad-42a2-8312-cd22f80b2464"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8c03fc09-9724-4b33-88c0-296dc4ed33fe">
+                <propertyInstance
+                  Id="421d5510-4f6f-4e32-a07a-b99a34daeb66"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="606be2a1-d706-4793-afa1-1d5d62bfb719">
+                <propertyInstance
+                  Id="ba2476e8-1204-452b-96e7-9f05e35a654d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="13ce263b-141d-4d49-9355-1c888bc66c4b">
+                <propertyInstance
+                  Id="2ba0935b-2280-4486-8e70-6eea915307d7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="e25fd38e-cb1a-44d5-83df-4f275205131f"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0a8ab14e-dece-4d75-9787-a351fdebc1d4"
+              LastKnownName="RegisterServiceBootstrapperTask"
+              LastKnownLocation="Package33_1152.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="36b28ee0-aca4-4234-886a-87a11998534e"
+            name="RegisterServiceTask"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3e061de1-f99e-4341-8ba9-27b90f090818"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DRegisterServiceTask Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fpackages%2FUnity.3.0.1304.1%2Flib%2FNet45%2FMicrosoft.Practices.Unity.dll Namespace%3DMicrosoft.Practices.Unity Type%3DIUnityContainer)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="259f8154-fb46-46e9-8e1a-65b6ce8849ab"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e55e9413-0ddc-4512-9f82-073bcd17a55a">
+                    <propertyInstance
+                      Id="97818a73-ff8d-4bab-b590-7f75fa042cdd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3f4ce73-b82a-4696-91df-758ea07887b7">
+                    <propertyInstance
+                      Id="149059e3-251c-414c-98b0-f4b9d1131d5a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d74536e5-b013-4d6c-bc17-480f590e9acc">
+                    <propertyInstance
+                      Id="26716428-82b8-4251-b621-13f00d1608d3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="628e4d47-fe7c-435c-ba18-5374b56dc8f6">
+                    <propertyInstance
+                      Id="a6f1aab1-eba6-4f11-8834-a25f99e0297f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dce0f90f-f7d0-47ea-ba3b-1e493db94668">
+                    <propertyInstance
+                      Id="4c49df57-79a3-4de6-aa9e-1732401103d7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="622c75b4-a567-4ed0-8734-1f3374418c18">
+                    <propertyInstance
+                      Id="40cfae88-9830-4c1d-8c23-364e86328f25"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8062b01d-f6f9-49e2-89b6-b54680ce7ed7"
+                  name="container"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="15f5b688-e934-429c-b4c2-40113be3231e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DRegisterServiceTask Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fpackages%2FUnity.3.0.1304.1%2Flib%2FNet45%2FMicrosoft.Practices.Unity.dll Namespace%3DMicrosoft.Practices.Unity Type%3DIUnityContainer)]) ParameterIdentifier%3Dcontainer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="76b3e8d4-61a6-4421-8df0-abbaf61edca0"
+                      LastKnownName="IUnityContainer"
+                      LastKnownLocation="Package32_1152.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="550f9d93-0a59-4253-a70c-6dcbb8c17f66"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="79790414-a204-463a-9011-7996edb3ca9c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DRegisterServiceTask Member%3DExecute"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="825508c6-5f5e-43a7-a78e-b346ebf31c85"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cdbd9420-ad4f-4d98-926d-efdf4849c90b">
+                    <propertyInstance
+                      Id="532b3de6-4b3d-47b8-b3b8-077d65c451c0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a34b6bd-2e35-4656-aafc-17c1c2e103a1">
+                    <propertyInstance
+                      Id="452d641e-f8ce-4e11-a1bb-8f60fb51c729"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e965f80d-3eb9-4369-bff4-f7b27c848628">
+                    <propertyInstance
+                      Id="ea721441-08ac-4293-8e54-98174dfad928"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4fed9dd3-91bb-4822-83ef-503cc7c4d8b5">
+                    <propertyInstance
+                      Id="efe61e23-fecb-4306-9c0d-face5c666727"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f87baed2-0ffe-458b-b1ff-90b59e324632">
+                    <propertyInstance
+                      Id="98c2a10c-2ab0-46f3-af5f-62f521103770"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06aca134-b6b2-47f1-a727-fabe6552cf83">
+                    <propertyInstance
+                      Id="25caac98-b007-4843-9a51-fd6aa0180945"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="292a67e2-5284-49c7-a181-1d8da6e960d9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="4f5948fd-4d14-44cf-950c-ca7a291e21c7"
+                      LastKnownName="TaskContinuation"
+                      LastKnownLocation="Package33_1152.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2d95ad0f-9b8b-4578-8dfe-b43fbbe429ec"
+        name="T11Repository"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="4e0d348c-b3d0-45cd-bba8-81ea1a111e8e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT11Repository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5eb9cfab-449b-4fd3-95cb-a1efb8157d0c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c9b9967f-2210-4c5b-ac05-40fb00d2a44f">
+                <propertyInstance
+                  Id="177ac668-c346-46b8-80e4-03a1a6fcbf12"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1704ce45-01b6-4a55-a4f7-646ef89b1e94">
+                <propertyInstance
+                  Id="ca5036af-a5ef-4d70-87d6-1c859b4ddf27"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6026490f-da4a-4286-9a6b-0241ff0e39b5">
+                <propertyInstance
+                  Id="acdc9fb4-ae37-4fba-bc51-103cce53b4e2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="62042548-334c-4c94-9da9-2fb9ab321ada">
+                <propertyInstance
+                  Id="99afd554-6167-4eac-bca0-24fbc26992ad"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b1e5ee55-cbd5-4d0e-a2bd-2aad3ef83931">
+                <propertyInstance
+                  Id="ab83d9fa-8269-4562-9584-bd120d4d69ce"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="a2a1c9f5-9387-471e-8110-bbfa79c0c08b">
+            <interfaceMoniker
+              Id="9d229fe4-9e6d-4f84-9e5f-fd54b1397b4a"
+              LastKnownName="IT11Repository"
+              LastKnownLocation="Package16_1152.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="a9631fd6-0359-4e6a-ad1f-8a93c51a1d8e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="26f10421-6513-4f22-b425-67042856f4cc"
+              LastKnownName="EFRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="3f036246-9b19-47c4-8900-69af2f06aa7e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="eb48ea35-3199-46b9-a000-d3da9a2c1dfe"
+              LastKnownName="EFRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="0e672857-52b9-4307-82cf-7f17d0e82df2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7d38f359-30e5-4db8-8530-d0f986a89d53"
+              LastKnownName="EFRepository"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="ff17a08a-b318-442f-bcbd-901dfd1333e1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c588b7f7-d8b1-40ec-bcf7-5bdb5d0861e6"
+              LastKnownName="EFRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="cb55b019-4185-466b-b103-e4af204c0083"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5df78220-2c98-4681-88d4-a3196973af86"
+              LastKnownName="EFRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="4f376393-a5ae-4091-a9b0-c4b2e44e053a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9e3d8eed-3b45-4f9d-b4fa-0003eca6995e"
+              LastKnownName="EFRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="097d8942-d970-4853-9690-dd5e39801b50"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e4895ba3-c1f5-450a-b2c5-04aed9e47d61"
+              LastKnownName="EFRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="a7e03ad5-eb9f-4f8a-84f6-0ca0f5b095af"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2864c87b-f561-49f8-83dc-0ed12254a483"
+              LastKnownName="EFRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="704e4b28-a5f7-4d96-88fa-2005a939fe03"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a2dfab1f-2ce0-4f6c-851e-6ab1fc960f4b"
+              LastKnownName="EFRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="1636b0ba-4f03-4563-a272-a690d7572920"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b5d9cca8-0bc5-4fb7-986f-d70bd1a708be"
+              LastKnownName="EFRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="e9f98c85-a26b-415c-8317-7d62fd6a77b2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0eda955c-090f-420a-b2a6-4d4daefd9c2b"
+              LastKnownName="EFRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b2389275-407c-4ef3-ae20-6dbcaccacab7"
+            name="T11Repository"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="92e6fa9b-2c03-4174-8095-985022df4a3d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT11Repository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="977ea128-5923-4391-8f71-3fb2e4742265"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3fe596e-ba9e-43c6-ab35-63852d7755de">
+                    <propertyInstance
+                      Id="97be8296-4d2e-4c28-8953-08cca6d2cd53"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="838bf494-75a8-4855-b12d-ea18e3e9b34e">
+                    <propertyInstance
+                      Id="df8e6bb0-46ed-4a45-a56e-4f0f786da2ef"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c57479a-bae9-4e30-8249-df048580c06a">
+                    <propertyInstance
+                      Id="8d63e35f-bc3b-4726-8d62-e688fe4e50dc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58903d7e-7777-4162-9c8a-6d78b17b64ad">
+                    <propertyInstance
+                      Id="a80088f3-4f4a-46b1-8ce3-cd2988e749a6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7690780e-47f8-4254-8404-e4868dba3e1b">
+                    <propertyInstance
+                      Id="1ab4b78a-d851-4893-9056-48fdd6bfdbdc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c30f472-7f6c-4cd1-865c-7189baef82ee">
+                    <propertyInstance
+                      Id="9dc4e402-2d20-4152-9472-5624b28f1fe2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a7a64fda-1ce0-42d5-91eb-ce7757ccbe10"
+                  name="context"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c9599a3a-6345-4d80-a6ab-1cdd7bad93f8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT11Repository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)]) ParameterIdentifier%3Dcontext"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="62737aca-bb8b-4a28-97df-aa7a36892968"
+                      LastKnownName="IRepositoryContext"
+                      LastKnownLocation="Package25_1152.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0cd8f1a3-816a-4808-b64b-93f9954688d1"
+        name="T1Repository"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="ed845d3a-7f33-4f7f-9ca1-6b7dc7f2c28e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT1Repository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="176360e6-a4a2-4fe5-9527-55dc9a8da548"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a3215be5-3d5f-46ab-937b-2c19cd19b127">
+                <propertyInstance
+                  Id="bc965c74-05eb-4621-83ce-164d14dafd66"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="22932b19-c2c7-4097-b1df-09a56a4da9a8">
+                <propertyInstance
+                  Id="480885a1-10f4-43c8-80b7-c760d75e37fc"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="30ce3921-5bcd-4964-a0c2-54bb3d4ab3e5">
+                <propertyInstance
+                  Id="210311ac-3e17-45b6-8224-b2e4f98a0fcd"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2c61b031-c05e-4c2d-9faf-e47459a3856c">
+                <propertyInstance
+                  Id="8cc8ee88-ca21-471b-8409-6f8442624af9"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b1591528-f8a4-47fb-bc70-112762025bcf">
+                <propertyInstance
+                  Id="71bd9c14-e31d-4510-8e0d-3936a68ac20b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="bf0a6a18-3f00-4636-a08d-eafc2181a944">
+            <interfaceMoniker
+              Id="73224659-6722-4aef-aa81-b2c65b7f4398"
+              LastKnownName="ITRepository"
+              LastKnownLocation="Package16_1152.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="0df8e73f-929f-452f-9d73-74dda10206f2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5df78220-2c98-4681-88d4-a3196973af86"
+              LastKnownName="EFRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="c17d0d64-186e-4aa1-af05-93bab04f4ce1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="eb48ea35-3199-46b9-a000-d3da9a2c1dfe"
+              LastKnownName="EFRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="fc311c25-3148-4022-91d5-e8bb3a725268"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7d38f359-30e5-4db8-8530-d0f986a89d53"
+              LastKnownName="EFRepository"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="78b21399-8399-4103-b065-a8d5a68d98ef"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c588b7f7-d8b1-40ec-bcf7-5bdb5d0861e6"
+              LastKnownName="EFRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="12bf2aab-3072-486d-bff5-b38ec60e7d5b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="26f10421-6513-4f22-b425-67042856f4cc"
+              LastKnownName="EFRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="b011c920-5d42-4cb4-b8bc-fc7014f28cec"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9e3d8eed-3b45-4f9d-b4fa-0003eca6995e"
+              LastKnownName="EFRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="706004fc-d73d-49b2-8bba-023078998bd5"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e4895ba3-c1f5-450a-b2c5-04aed9e47d61"
+              LastKnownName="EFRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="b23c664f-bbb4-415d-8799-0cb4beab58d5"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2864c87b-f561-49f8-83dc-0ed12254a483"
+              LastKnownName="EFRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="8db69bdb-77c3-4018-9571-fe31397736e8"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a2dfab1f-2ce0-4f6c-851e-6ab1fc960f4b"
+              LastKnownName="EFRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="7d331688-a585-41c2-ae2e-7055d6943eef"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b5d9cca8-0bc5-4fb7-986f-d70bd1a708be"
+              LastKnownName="EFRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="5fb69597-7a4a-4151-8861-c8c0d93577c3"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0eda955c-090f-420a-b2a6-4d4daefd9c2b"
+              LastKnownName="EFRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="260dd4af-5490-4bda-8087-87e71531f110"
+            name="T1Repository"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ace2e141-c4ef-4982-9d74-d53fc501b9ac"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT1Repository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4d2d17a6-d9cf-4864-b6cf-a86096fe6784"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9bfc50b-063a-433c-bc13-03a3400c3a7a">
+                    <propertyInstance
+                      Id="680ec858-5793-4bfd-94df-ffa4b8ffcdd5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a99ed21-9cdd-49a5-b5aa-d1222dd4c940">
+                    <propertyInstance
+                      Id="718b7b8f-11b9-4bb9-9a0e-057fb2c4955b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="292ae168-3288-4ed9-b480-09a3bf9791d3">
+                    <propertyInstance
+                      Id="9d6b5719-bcd5-4c0a-a463-cf355211e029"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7de798e-4892-4f96-8dc3-3221d9983ae3">
+                    <propertyInstance
+                      Id="7452ca72-b284-4595-9330-5569f2a2024f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d2c8d64-b96c-4731-b2e5-9fcfe194c155">
+                    <propertyInstance
+                      Id="c331ee6b-c3a7-40cd-a7e4-9f32bd011018"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="065a65e2-1a0c-445b-9db5-10028c51c36f">
+                    <propertyInstance
+                      Id="f94f3f4f-c299-4abd-a87a-2b39a93bc394"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fe963519-8211-4922-92e8-32bf67e21657"
+                  name="context"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0a96b272-50fa-4a88-9ae2-09f893306616"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT1Repository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)]) ParameterIdentifier%3Dcontext"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="62737aca-bb8b-4a28-97df-aa7a36892968"
+                      LastKnownName="IRepositoryContext"
+                      LastKnownLocation="Package25_1152.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6448bebe-cb30-4c60-8c92-543fae93c627"
+        name="T2Repository"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="146fc6e4-23bc-4af1-b11b-78fdfb578726"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT2Repository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="80abc3d5-cf3f-48ee-9b11-9ab67fb7b9d3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3e31a2ce-309f-4c78-80b1-f6ea0e0b2f07">
+                <propertyInstance
+                  Id="6024e585-3a72-4b98-8fa3-c2bc0a1e7d04"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dcbe6d76-dc67-4c99-8960-3afc9ed2ca3c">
+                <propertyInstance
+                  Id="30befc9b-c8fe-4311-851b-5aa613c1e0e1"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2b99b7a2-4635-4cfa-b401-2e19375876c6">
+                <propertyInstance
+                  Id="fc6b6292-2fb6-4826-bae8-9f13ec5b320a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c35b0efe-0e27-4aff-a28e-27312d07a459">
+                <propertyInstance
+                  Id="77ff804a-da5c-41af-85d7-adca1259b881"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d978ad3b-f533-4314-9aff-5488f9c6b906">
+                <propertyInstance
+                  Id="d2c9e865-ee15-4bd3-a23d-2071799c4f3c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="c7ff0a0e-be66-419c-94af-081128c9e3a7">
+            <interfaceMoniker
+              Id="234801d9-205b-4345-9b47-83bdaf0c0f59"
+              LastKnownName="IT2Repository"
+              LastKnownLocation="Package16_1152.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="399ebd32-ef12-4a5b-a882-d452cb5b50ae"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9e3d8eed-3b45-4f9d-b4fa-0003eca6995e"
+              LastKnownName="EFRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="36205168-6424-408e-b801-8977e4092f52"
+            isSubstitutable="false">
+            <classMoniker
+              Id="eb48ea35-3199-46b9-a000-d3da9a2c1dfe"
+              LastKnownName="EFRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="dbac963f-a239-462c-9999-01676a960df1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7d38f359-30e5-4db8-8530-d0f986a89d53"
+              LastKnownName="EFRepository"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="b9a8dc46-69c1-40a4-9239-782d482952b8"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c588b7f7-d8b1-40ec-bcf7-5bdb5d0861e6"
+              LastKnownName="EFRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="70e9692a-2100-4795-b0ff-9ac0196d9c4b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="26f10421-6513-4f22-b425-67042856f4cc"
+              LastKnownName="EFRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="add69285-586c-4966-8dfb-68ff2ecd0dc6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5df78220-2c98-4681-88d4-a3196973af86"
+              LastKnownName="EFRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="cdfd3f36-b35b-4054-9c3e-fd8d778bc3f9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e4895ba3-c1f5-450a-b2c5-04aed9e47d61"
+              LastKnownName="EFRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="5462b40f-0944-446a-93fb-45126ace3e52"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2864c87b-f561-49f8-83dc-0ed12254a483"
+              LastKnownName="EFRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="9957b138-a944-4c0d-8fe6-72f55998ca56"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a2dfab1f-2ce0-4f6c-851e-6ab1fc960f4b"
+              LastKnownName="EFRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="90446b9a-85ab-4418-84eb-283ce87a2f8e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b5d9cca8-0bc5-4fb7-986f-d70bd1a708be"
+              LastKnownName="EFRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="6a1db9f5-9737-496c-99bd-2f4d23b69e0b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0eda955c-090f-420a-b2a6-4d4daefd9c2b"
+              LastKnownName="EFRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="93d53107-3183-478e-af38-af4f22326f8e"
+            name="T2Repository"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5bda277e-6536-4f2f-8e0e-4093625c4861"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT2Repository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="580e0c8e-a987-437e-83a0-1e92ce8c281a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e4b94b3-4688-40dc-9077-aa2715227b50">
+                    <propertyInstance
+                      Id="2d7539b1-c189-400a-a9fe-4555c1f8ec32"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="abbd8f49-d348-40fe-97f6-321c7b875a2b">
+                    <propertyInstance
+                      Id="e33ef222-2d87-4e24-b49d-af01dcc4583b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e4100245-7c97-480b-92c3-e7fb002601a9">
+                    <propertyInstance
+                      Id="ed3f9837-1d05-4fcc-a136-1a687b77a721"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ed3ef1a-e087-44fc-8d29-1e54a3c7ce79">
+                    <propertyInstance
+                      Id="48f52a50-e9fd-42f7-823e-5a0f11c469de"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9daa5c0e-8bb5-43d5-b539-ea90605d6fe6">
+                    <propertyInstance
+                      Id="9da505a7-0774-4213-abde-4638b938a9fa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f47e2a38-9b0b-47d3-aeaa-aa83299c9149">
+                    <propertyInstance
+                      Id="e14d345c-c040-488d-abfd-b657f4f2a26d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="efa044ac-e63c-496f-9704-cc29b331f495"
+                  name="context"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="016252fc-71af-43c9-9c67-d7f0083cd5a0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT2Repository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)]) ParameterIdentifier%3Dcontext"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="62737aca-bb8b-4a28-97df-aa7a36892968"
+                      LastKnownName="IRepositoryContext"
+                      LastKnownLocation="Package25_1152.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="edb3c6a0-dcc5-4194-b577-c0b34041bfd2"
+        name="T5Repository"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="48db64ef-8a25-426e-aaba-4c4ce29e55c5"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT5Repository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b29c20ff-9139-446e-8806-612e4d516247"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e3babd52-9370-4e52-b577-da40f9807473">
+                <propertyInstance
+                  Id="92af95eb-4abd-4ffa-a52f-6e8795e8b6e2"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7d845543-3f9d-4e12-b4cb-bb00d229dc99">
+                <propertyInstance
+                  Id="02e108f9-0762-46a6-8967-487f48d9b995"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e96492e7-4c92-4e2f-9b20-723c8e937906">
+                <propertyInstance
+                  Id="b822e6bf-bfca-4d14-a5dc-ca2bc9fc8298"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5ff78f9e-4808-4c8a-87de-4d9f0deb8181">
+                <propertyInstance
+                  Id="8ced033c-6d19-4684-b296-cc32cb3881fd"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f737cee0-6209-46e8-847c-c6e00567a41b">
+                <propertyInstance
+                  Id="b202ac3c-1b2f-4acf-8d19-68ab7d6629b7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="442603a0-b2a9-4743-bbc8-0dd20456799b">
+            <interfaceMoniker
+              Id="5178e5ae-c69f-4383-a3ef-605411c9edd2"
+              LastKnownName="IT5Repository"
+              LastKnownLocation="Package16_1152.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="f86cf2a1-b4cd-43bc-8f38-33e33783c67e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e4895ba3-c1f5-450a-b2c5-04aed9e47d61"
+              LastKnownName="EFRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="2489b326-c064-446b-be86-539a2c131f24"
+            isSubstitutable="false">
+            <classMoniker
+              Id="eb48ea35-3199-46b9-a000-d3da9a2c1dfe"
+              LastKnownName="EFRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="8e906854-5dfd-4e63-b901-e8ebce43683d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7d38f359-30e5-4db8-8530-d0f986a89d53"
+              LastKnownName="EFRepository"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="6f32d974-8ec4-4869-94ae-8ed9fce5bfb1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c588b7f7-d8b1-40ec-bcf7-5bdb5d0861e6"
+              LastKnownName="EFRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="0dfb040b-ad25-441a-b9c6-c697685d6daf"
+            isSubstitutable="false">
+            <classMoniker
+              Id="26f10421-6513-4f22-b425-67042856f4cc"
+              LastKnownName="EFRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="0e83defe-1a84-480e-9cf3-dcc72ce05df9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5df78220-2c98-4681-88d4-a3196973af86"
+              LastKnownName="EFRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="f84c8b48-e3c7-48a9-b5ba-fe0a4339648e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9e3d8eed-3b45-4f9d-b4fa-0003eca6995e"
+              LastKnownName="EFRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="cee10daf-2538-4752-8950-b39748677cc5"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2864c87b-f561-49f8-83dc-0ed12254a483"
+              LastKnownName="EFRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="124dfb0e-45e1-4c14-98c2-682975718ecb"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a2dfab1f-2ce0-4f6c-851e-6ab1fc960f4b"
+              LastKnownName="EFRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="329d26c5-fd99-42ea-bd5b-4d904f90d36a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b5d9cca8-0bc5-4fb7-986f-d70bd1a708be"
+              LastKnownName="EFRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="53d6c67c-0352-43aa-8700-6067743cdae1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0eda955c-090f-420a-b2a6-4d4daefd9c2b"
+              LastKnownName="EFRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9fc76467-9899-4cca-b74d-45dc0bb806ef"
+            name="T5Repository"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="372041aa-1eeb-41c8-92f4-e62746af9911"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT5Repository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9b4c96cb-546a-4a67-b023-5b294b0aff67"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="282258fe-697e-4d41-8540-91db39140bd3">
+                    <propertyInstance
+                      Id="4dbe9b51-f8b9-4193-8815-9de1a988fd98"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bf26baa-2e69-40d0-a441-df32feb1534e">
+                    <propertyInstance
+                      Id="be0ac2b7-2fac-4d21-a78b-a23315c9f595"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dcba61d2-566b-4a67-ad96-85392643ef40">
+                    <propertyInstance
+                      Id="34baeae3-3ff6-43c5-a74b-e07eec575b19"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b40c7dd-a7d9-4410-af1f-5b0e9610bb76">
+                    <propertyInstance
+                      Id="3bcc5d3a-f2b1-4778-8ddb-38ae23678bc2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66994e99-a58a-4d26-a40e-adbe8c154d26">
+                    <propertyInstance
+                      Id="b7e3ead5-2c77-4216-9eac-b99f60703939"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="278476c8-a4d8-40eb-bf44-24acd527d6f9">
+                    <propertyInstance
+                      Id="7835892e-a505-47f9-a7f9-3bd25fecbc32"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="096b3ba4-9c42-481c-9a80-b3e8c22bbc44"
+                  name="context"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="650c85c7-3423-4b77-8846-df588dbcda8d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT5Repository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)]) ParameterIdentifier%3Dcontext"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="62737aca-bb8b-4a28-97df-aa7a36892968"
+                      LastKnownName="IRepositoryContext"
+                      LastKnownLocation="Package25_1152.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="51fda211-8882-48f1-a29c-73f6003f4720"
+        name="T6Repository"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d6cc9384-3d83-406e-a0b6-82aeda530d4b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT6Repository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="eae6f663-3412-43a6-b0d3-18a35594c4b8"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e15d2f07-fa99-4b5b-81c7-a32e680f1e4d">
+                <propertyInstance
+                  Id="26d1b8e0-fc89-4d73-84f6-954942f1dfa1"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d8a9ec3d-d669-4a08-91c4-28c1f7a2badf">
+                <propertyInstance
+                  Id="a6d4d192-d502-49ff-ac56-ea44bd0527a8"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0a4cd9f9-d761-4679-ba84-014273fab4da">
+                <propertyInstance
+                  Id="c67d3bb1-8021-40b2-b34f-f9ce12d1456d"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a5582357-734d-4dcb-a51d-51b35cfa51c9">
+                <propertyInstance
+                  Id="2ef7a0f1-7529-44df-9e56-e9fc1ebc4590"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="764c5b30-0ee5-4eee-80d1-4ccfb619e272">
+                <propertyInstance
+                  Id="9dcb748e-c872-4f6f-a6d1-b8c824f9ebfa"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="c891fe90-2eaa-4985-9f51-b3ba7d213853">
+            <interfaceMoniker
+              Id="b021511b-74ba-45d1-90f5-4388f5a06273"
+              LastKnownName="IT6Repository"
+              LastKnownLocation="Package16_1152.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="74c67ecb-032c-4f9b-a49e-25967350178f"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2864c87b-f561-49f8-83dc-0ed12254a483"
+              LastKnownName="EFRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="438606ce-3af4-4c2b-8344-63670f13d6aa"
+            isSubstitutable="false">
+            <classMoniker
+              Id="eb48ea35-3199-46b9-a000-d3da9a2c1dfe"
+              LastKnownName="EFRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="133452d2-e238-47e5-a4fb-5e3aaec097b5"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7d38f359-30e5-4db8-8530-d0f986a89d53"
+              LastKnownName="EFRepository"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="6656c7bc-3a23-4d1c-a15d-e102c013bd45"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c588b7f7-d8b1-40ec-bcf7-5bdb5d0861e6"
+              LastKnownName="EFRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="8b6bde09-b6af-467c-bf5c-1b28fcc81864"
+            isSubstitutable="false">
+            <classMoniker
+              Id="26f10421-6513-4f22-b425-67042856f4cc"
+              LastKnownName="EFRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="f18164d2-b269-4b96-a387-03de52f82851"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5df78220-2c98-4681-88d4-a3196973af86"
+              LastKnownName="EFRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="d6359652-1254-4ccd-9bde-a51024d1a359"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9e3d8eed-3b45-4f9d-b4fa-0003eca6995e"
+              LastKnownName="EFRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="b2ff52a1-cc00-4ffd-a8ee-2e9c99fc5035"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e4895ba3-c1f5-450a-b2c5-04aed9e47d61"
+              LastKnownName="EFRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="910dd57a-d533-47df-b06a-7eab7e5b1a44"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a2dfab1f-2ce0-4f6c-851e-6ab1fc960f4b"
+              LastKnownName="EFRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="bc32361e-937c-4446-86b4-9662b70db389"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b5d9cca8-0bc5-4fb7-986f-d70bd1a708be"
+              LastKnownName="EFRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="26928be4-0803-4a6b-b28e-830315048ee9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0eda955c-090f-420a-b2a6-4d4daefd9c2b"
+              LastKnownName="EFRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9fede063-c9ad-455b-b5b5-2243549bf25b"
+            name="T6Repository"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="93044a6a-294c-4e59-8d6f-56f10b841dea"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT6Repository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4cd8e7e8-d4e8-4239-869d-a4db6e957d65"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93ea4d3a-e624-4905-a7bc-e7ad7b5a1da8">
+                    <propertyInstance
+                      Id="203dc379-14bf-4131-9c41-5bb2273eca03"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c17e3e5-533a-4c35-b048-22b3ba595de7">
+                    <propertyInstance
+                      Id="82ac107d-810b-4f40-b462-8d6c78274b8f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e141bc96-bec3-452e-95e8-e691fac2bea5">
+                    <propertyInstance
+                      Id="4a8cb52d-7a90-47d4-bb6a-301503cde0c3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7e2f448-7a7a-4ee3-928b-7903b58d79f7">
+                    <propertyInstance
+                      Id="f9aef050-ca2f-4100-b4cd-f71094425c72"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4db521da-969a-4da0-9059-dd268aaae477">
+                    <propertyInstance
+                      Id="6d36fb5e-52e9-4356-a1f8-ffa675d50d0e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca3c25ea-1b10-479b-bd37-e716dc7255a9">
+                    <propertyInstance
+                      Id="c1c294f7-8485-4093-9ab3-977bd6405f57"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c799e53d-9066-4791-89cf-befe298ba33e"
+                  name="context"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="eddabccf-fee6-4e89-9171-a09ac00d3efb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT6Repository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)]) ParameterIdentifier%3Dcontext"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="62737aca-bb8b-4a28-97df-aa7a36892968"
+                      LastKnownName="IRepositoryContext"
+                      LastKnownLocation="Package25_1152.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c91067be-16a5-4f27-b4f2-f0639b642ab0"
+        name="T8Repository"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e2fa86a5-ed45-4b95-b01a-8853d4c3ba70"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT8Repository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="98ab4ee2-b854-446e-8f46-060463fe1a88"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="285b8de3-29a7-4af9-815d-17197b7ba75c">
+                <propertyInstance
+                  Id="e104938a-d29c-4215-a2ca-092c1fbb705a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="855230eb-a9d8-48fa-a3cf-f70ce0641bc6">
+                <propertyInstance
+                  Id="e5db0693-abc2-4119-829a-8799ae0d9bf5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="53c1aed1-349e-4434-85a1-fb4542f4feb5">
+                <propertyInstance
+                  Id="af6c5a39-c3b7-42ea-9fb7-378b3e2aa583"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2d19b7c4-46aa-4dd5-893e-cd92b48b6219">
+                <propertyInstance
+                  Id="0f1f1386-b0e1-4ca1-b7df-5bcfff39d806"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="061e00ff-081a-46c9-bfe9-78201e45fa93">
+                <propertyInstance
+                  Id="f761575f-031a-4023-84f7-6ded2a479756"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="19710c38-94b2-472c-9e90-a94f3fd68caf">
+            <interfaceMoniker
+              Id="bd0f5532-b995-4883-a0eb-af8147f607ce"
+              LastKnownName="IT8Repository"
+              LastKnownLocation="Package16_1152.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="d4ab77c1-1f9c-4959-b492-18e25e360d90"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a2dfab1f-2ce0-4f6c-851e-6ab1fc960f4b"
+              LastKnownName="EFRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="f42e740e-5b54-436d-a188-f85643549729"
+            isSubstitutable="false">
+            <classMoniker
+              Id="eb48ea35-3199-46b9-a000-d3da9a2c1dfe"
+              LastKnownName="EFRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="ebdcdda7-5788-4692-9f5b-abe92bae2fa9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7d38f359-30e5-4db8-8530-d0f986a89d53"
+              LastKnownName="EFRepository"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="99369137-1726-4eeb-94fe-8312a09efb7a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c588b7f7-d8b1-40ec-bcf7-5bdb5d0861e6"
+              LastKnownName="EFRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="749d4a6f-2892-47bc-8659-ccd96bfd6ebc"
+            isSubstitutable="false">
+            <classMoniker
+              Id="26f10421-6513-4f22-b425-67042856f4cc"
+              LastKnownName="EFRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="b8cccda8-97cd-4e07-8479-5cb939352d31"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5df78220-2c98-4681-88d4-a3196973af86"
+              LastKnownName="EFRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="071aa3a2-4b28-4901-9907-62a878eacb7b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9e3d8eed-3b45-4f9d-b4fa-0003eca6995e"
+              LastKnownName="EFRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="a7b4a526-20ba-424e-b424-8027e782549a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e4895ba3-c1f5-450a-b2c5-04aed9e47d61"
+              LastKnownName="EFRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="fae1037b-b1ee-432c-a783-32dfde9b7ec6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2864c87b-f561-49f8-83dc-0ed12254a483"
+              LastKnownName="EFRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="5c82ed0e-4006-4c8d-8325-5374739d027d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b5d9cca8-0bc5-4fb7-986f-d70bd1a708be"
+              LastKnownName="EFRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="e653c3fe-20c8-4cb7-88d0-6060a9462467"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0eda955c-090f-420a-b2a6-4d4daefd9c2b"
+              LastKnownName="EFRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="77395ae9-8de1-4ddc-9494-b7db4bf07cfc"
+            name="T8Repository"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4c4b005d-3ce4-4f70-b362-16f3d8473d91"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT8Repository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="067871c0-085b-4a4e-a84e-721a86497454"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78601445-8f25-49a0-a369-c9027b4c5de3">
+                    <propertyInstance
+                      Id="68d13ff3-9d46-43b0-ace2-d38f060aad67"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec8ffb12-0bcd-4178-b43f-a7aaebbaaf83">
+                    <propertyInstance
+                      Id="febd7a9e-b895-44f0-ab79-1770fcba3209"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe1ddd61-f3d7-4d51-9ae9-2a6a4a9577cc">
+                    <propertyInstance
+                      Id="eb058e26-3eff-4c93-9ba3-a1cb50414ae3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca84dd1d-5a4e-46a8-97a5-1368cfa2382e">
+                    <propertyInstance
+                      Id="03047076-01c8-46ba-84ca-b3d6a441413b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="19f7cfb9-b544-40a2-b51d-342b94ead6ea">
+                    <propertyInstance
+                      Id="74f0ee85-608f-4220-a9e4-bf986031f5ac"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b5e6e5c-740c-450b-a483-b30439a43eee">
+                    <propertyInstance
+                      Id="f1489c3a-a8fd-459f-b6b1-4b2cf80b4bb6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f8476906-3928-4e4d-b80d-5ee953779331"
+                  name="context"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e7397bc8-5e72-4dc2-87a1-5274a3bcfab2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DT8Repository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)]) ParameterIdentifier%3Dcontext"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="62737aca-bb8b-4a28-97df-aa7a36892968"
+                      LastKnownName="IRepositoryContext"
+                      LastKnownLocation="Package25_1152.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4f4590fa-6bf1-47b2-ac74-7e55946af3bb"
+        name="YmtOrderRepository"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="cdca8607-b6cc-412a-b670-9e0a8573f9a3"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DYmtOrderRepository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="26aab90f-e0c2-445a-85b9-7725bec718b8"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7ee84a39-ce67-48c6-9cf0-8314c3621303">
+                <propertyInstance
+                  Id="d11c0447-73df-48c1-8ce8-75aa675f769f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9c63dad6-5871-48e4-84a3-7813bb93f673">
+                <propertyInstance
+                  Id="d8ea0423-8c75-4873-b2d4-55c7d61f6b22"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4a1d8f88-18c0-441e-9d09-19178514e191">
+                <propertyInstance
+                  Id="1d1731aa-ff50-4680-862d-3490495b369c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="416be3e7-6488-40d4-8d60-0421420feba2">
+                <propertyInstance
+                  Id="358be240-a4d3-4a0f-bb5a-47ccdfd88730"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b7f29859-003b-4364-8256-ad8ae8730404">
+                <propertyInstance
+                  Id="02e20519-2b18-42ef-9b09-39ac82646df4"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="26f77a7b-c69c-4ce2-b65b-637031959a43">
+            <interfaceMoniker
+              Id="04daafb1-0b10-4b71-8c0a-af814e100a9a"
+              LastKnownName="IYmtOrderRepository"
+              LastKnownLocation="Package14_1152.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="7543cd00-755c-4451-af91-f7764681c577"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b5d9cca8-0bc5-4fb7-986f-d70bd1a708be"
+              LastKnownName="EFRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="2ba961c3-ee75-483b-ae06-0d786faab0e0"
+            isSubstitutable="false">
+            <classMoniker
+              Id="eb48ea35-3199-46b9-a000-d3da9a2c1dfe"
+              LastKnownName="EFRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="ff71d616-8abe-4624-bd3d-bd3c6485d27c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7d38f359-30e5-4db8-8530-d0f986a89d53"
+              LastKnownName="EFRepository"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="98dd4597-ce64-43f6-8b20-08254dcf40cb"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c588b7f7-d8b1-40ec-bcf7-5bdb5d0861e6"
+              LastKnownName="EFRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="6a635e4b-fed6-4a3a-b101-76a0d78754e1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="26f10421-6513-4f22-b425-67042856f4cc"
+              LastKnownName="EFRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="72e515ba-ee35-45aa-b1c2-448f96200697"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5df78220-2c98-4681-88d4-a3196973af86"
+              LastKnownName="EFRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="db0b7720-5d68-4d45-8b10-7bd8d143ba0c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9e3d8eed-3b45-4f9d-b4fa-0003eca6995e"
+              LastKnownName="EFRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="3b4e8997-7ef5-475a-b7d2-3e19ec6a5d15"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e4895ba3-c1f5-450a-b2c5-04aed9e47d61"
+              LastKnownName="EFRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="91db849a-cbbc-4d5e-8367-e3acb6affdc9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2864c87b-f561-49f8-83dc-0ed12254a483"
+              LastKnownName="EFRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="6840d539-355d-4b02-98de-ce52ed35564a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a2dfab1f-2ce0-4f6c-851e-6ab1fc960f4b"
+              LastKnownName="EFRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="833d0c80-48a0-45dc-80cc-c32ad24d5196"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0eda955c-090f-420a-b2a6-4d4daefd9c2b"
+              LastKnownName="EFRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="32bb1ad3-c013-4775-b187-2e9a76b5da48"
+            name="YmtOrderRepository"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8dcf297f-6f42-47d1-8b30-b1537dfe6db0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DYmtOrderRepository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="39eb7141-5149-48f6-8558-7f9d5e7e23e3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f32a5af9-f6d6-4a07-9c2f-0314701d7191">
+                    <propertyInstance
+                      Id="a934b6a6-5ea8-4255-8939-4f2fcb9db361"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80675e8b-54a6-4ec1-a5ca-ab0708a1efd5">
+                    <propertyInstance
+                      Id="de3d74e0-c6ca-4d78-acc3-544a03bc11dd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56045344-05db-49a2-bea0-87d3bf5aa90d">
+                    <propertyInstance
+                      Id="770f485d-981e-4020-b161-0569df02de68"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee50ac79-570f-4be3-8ce2-bbfd37785db0">
+                    <propertyInstance
+                      Id="b9d1024e-a3be-433d-94c3-ef22b294088a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56d8453a-f770-46ed-b557-981d354ad301">
+                    <propertyInstance
+                      Id="405eed19-a295-4c8a-aa0e-c5f3afc6dbaa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f547aa3-9e78-4a5f-a9c2-8d8bbb473899">
+                    <propertyInstance
+                      Id="d8083ebc-17d2-427b-b77d-2a06ffa5130d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="49606f5c-ecfa-4f88-a872-de326035b335"
+                  name="context"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0f1d98a2-2628-42f9-97f2-1ee18de0c647"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DYmtOrderRepository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)]) ParameterIdentifier%3Dcontext"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="62737aca-bb8b-4a28-97df-aa7a36892968"
+                      LastKnownName="IRepositoryContext"
+                      LastKnownLocation="Package25_1152.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b6fa050f-1880-4c22-9674-3948de9f974c"
+        name="YmtUserRepository"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8bc39a83-9cca-41d2-b375-5b1a308145ae"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DYmtUserRepository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3578e96e-8a6d-4c6d-8d38-385069a04e6c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f8de52fc-3916-4e77-b0b4-fbf13167fce6">
+                <propertyInstance
+                  Id="b7580718-7aaa-4e55-9cc3-2569b2470574"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e58ff1ee-e3d6-4ee7-a36c-4281dbdfbb19">
+                <propertyInstance
+                  Id="7a1cfc0c-d2e3-4987-982a-b9a5dec4de4b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a49d8821-9035-4bb7-9315-83c47faf440d">
+                <propertyInstance
+                  Id="3244b6ec-8af2-4417-8c4d-38faccc3735b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef619038-db43-42af-a62b-46c27ed8468d">
+                <propertyInstance
+                  Id="a4a484b0-ee8b-4f9a-b440-7cc9eabb364a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d1510043-ffaf-43e7-9e81-8b19bb1cb812">
+                <propertyInstance
+                  Id="86825b6d-2413-490b-92b9-74084ceb0ff3"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="9a8e212b-28ff-45a4-be38-683fa3953d48">
+            <interfaceMoniker
+              Id="96618b27-6909-43e3-b37b-99cb23f5ed23"
+              LastKnownName="IYmtUserRepository"
+              LastKnownLocation="Package15_1152.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="7091434d-e327-4c61-8f6f-080d0864f861"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0eda955c-090f-420a-b2a6-4d4daefd9c2b"
+              LastKnownName="EFRepository&lt;YmtUser‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="65684dd4-ec89-4b0c-8c82-f31049adb7e5"
+            isSubstitutable="false">
+            <classMoniker
+              Id="eb48ea35-3199-46b9-a000-d3da9a2c1dfe"
+              LastKnownName="EFRepository&lt;Bank‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="f00fe5a5-ebf6-45b9-810a-c632dbbc5a7f"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7d38f359-30e5-4db8-8530-d0f986a89d53"
+              LastKnownName="EFRepository"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="90853400-43c1-4975-956e-f8b0180b7232"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c588b7f7-d8b1-40ec-bcf7-5bdb5d0861e6"
+              LastKnownName="EFRepository&lt;Buyers‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="e0cbb996-ed51-4edb-856d-e12ef0436b0a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="26f10421-6513-4f22-b425-67042856f4cc"
+              LastKnownName="EFRepository&lt;T11‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="8e100ee8-7252-42cb-924c-b3db517304b0"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5df78220-2c98-4681-88d4-a3196973af86"
+              LastKnownName="EFRepository&lt;T1‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="898d6608-bc8e-4219-9bf8-47cfe7f3ff94"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9e3d8eed-3b45-4f9d-b4fa-0003eca6995e"
+              LastKnownName="EFRepository&lt;T2‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="cde5e0f8-db25-4dc3-9d4d-e9b1c6ba80ea"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e4895ba3-c1f5-450a-b2c5-04aed9e47d61"
+              LastKnownName="EFRepository&lt;T5‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="214a6c4b-fff6-45c1-aba1-97abcc1a92d1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2864c87b-f561-49f8-83dc-0ed12254a483"
+              LastKnownName="EFRepository&lt;T6‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="d332ce11-df9d-4ff9-9076-2b39edb2001e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a2dfab1f-2ce0-4f6c-851e-6ab1fc960f4b"
+              LastKnownName="EFRepository&lt;T8‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+          <generalization
+            Id="e07f3b4a-fca3-44b2-a17a-d74896086a42"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b5d9cca8-0bc5-4fb7-986f-d70bd1a708be"
+              LastKnownName="EFRepository&lt;YmtOrder‎&gt;"
+              LastKnownLocation="Package23_1152.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d47a8cf0-da98-4430-a60b-eb16bfa51040"
+            name="YmtUserRepository"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6f9993e5-3b6d-44e6-911c-0df957b89aec"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DYmtUserRepository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="383f1ec5-09da-4dc4-a895-28cb6bfca8b7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3347dcca-94b3-46e5-b0fb-f65c24b1326d">
+                    <propertyInstance
+                      Id="b1acc561-de84-4723-befa-e10bf7694f43"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae817ec0-b630-4098-bf89-005e1a563a73">
+                    <propertyInstance
+                      Id="07f9e36c-75c0-462c-875e-f1c1b8688ce7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08a78b06-94e0-474b-a535-6d14459f5a52">
+                    <propertyInstance
+                      Id="5b63f0f3-7fea-4d20-9009-9147effb26a8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c88283ba-06ef-49e1-a6b9-b27a2964d4ac">
+                    <propertyInstance
+                      Id="04dc2209-5c08-47ed-8047-c58666bb4742"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c41c1579-15a9-42e6-9a90-771cb9285fd0">
+                    <propertyInstance
+                      Id="2af8c2d7-9efa-464c-9bcf-979c5e42cc6c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6ffccde-d396-490c-8348-0f7d7dee15df">
+                    <propertyInstance
+                      Id="9418dc21-2dd5-40ae-be64-41e301b87898"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0610ce3e-e487-4407-ac55-fc4985c3ff5a"
+                  name="context"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d411d953-58b0-4e4c-bd6d-65141c70c905"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fexample%2FYmt.Trading.Domain.Repository%2Fbin%2FDebug%2FYmt.Trading.Domain.Repository.dll Namespace%3DYmt.Trading.Domain.Repository Type%3DYmtUserRepository Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Repository Type%3DIRepositoryContext)]) ParameterIdentifier%3Dcontext"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="62737aca-bb8b-4a28-97df-aa7a36892968"
+                      LastKnownName="IRepositoryContext"
+                      LastKnownLocation="Package25_1152.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

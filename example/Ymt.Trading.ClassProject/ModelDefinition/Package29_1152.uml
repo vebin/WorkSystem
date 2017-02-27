@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="5b89c14c-38a9-45e0-8dfd-5963f1eb3667"
+  name="Specifications"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="361a8ec7-c405-458f-84d4-3a98a574eed7"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DYmtSystem.Domain.Specifications"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="d7daee66-a062-45c7-b426-a1baaf353bce"
+        name="ISpecification&lt;YmtOrder‎&gt;"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c488b5c0-9f3b-4d50-951b-85e34845d2db"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ba8c3398-78ea-4787-86f5-e079d92cd824">
+                <propertyInstance
+                  Id="048df433-7336-43c6-a51d-259e8f0ed367"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0ad20b87-d552-4a11-b097-01356326a54d">
+                <propertyInstance
+                  Id="5279d73b-0bdb-4fba-a98e-80bf4182a3b0"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2de21df8-a077-4de8-ac9b-11f7819e3abb">
+                <propertyInstance
+                  Id="98b721e5-b9f4-42e1-92d2-828dec2b5900"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ac7e9b66-786a-42bc-aa61-23d80ec3264d">
+                <propertyInstance
+                  Id="018cac3a-a1a6-44ec-bc40-40497a0a60a3"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="3680a6de-5f46-464d-8a0f-d9ca1390c7ac">
+            <redefinableTemplateSignatureMoniker
+              Id="3d1f1ba6-538c-48a6-8af9-8de36d313f1f"
+              LastKnownLocation="Package29_1152.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="6778a15b-fb63-40a9-b35c-0e04f96ea02e">
+                  <actuals>
+                    <classMoniker
+                      Id="fe0b675c-e68f-46ba-916e-a22d07871945"
+                      LastKnownName="YmtOrder"
+                      LastKnownLocation="Package14_1152.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="6332807c-2116-4be8-8d8d-83b6deaa3358"
+                      LastKnownLocation="Package29_1152.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d66aac41-7212-465f-a791-609684829331"
+        name="ISpecification"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="3c53b24b-5013-4270-a913-ab9d5fdbca89"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Specifications Type%3D(Name%3DISpecification GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a8a38805-ac00-4c33-8c4b-6fe19e2d1947"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="96b3f368-a0fa-4891-9d2e-2c925ed4db54">
+                <propertyInstance
+                  Id="b7af18a9-ca28-4115-a0d5-47d794292bc4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c73e4130-5785-4c29-a2a9-8f2daca6e58c">
+                <propertyInstance
+                  Id="4cdfc511-a145-4566-89c1-59f3e72cf39a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ae2daa53-100e-476c-8adc-7ee4c1b585cc">
+                <propertyInstance
+                  Id="a50bfdbe-f533-4832-b135-84d488fa35f3"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="36e4c5fe-a8d1-468a-9ef0-765d94580e7f">
+                <propertyInstance
+                  Id="67a794ab-b19e-41b5-aeca-e6e916a31bfa"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="3d1f1ba6-538c-48a6-8af9-8de36d313f1f"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="6332807c-2116-4be8-8d8d-83b6deaa3358">
+                <referencesInternal>
+                  <reference
+                    Id="107f3ac8-9c99-49e6-b7e0-a9dbca8ad953"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FE:%2Fworks%2Fymatou%2Fproject2%2FYmatou%2FMain%2FYmatouSystem%2Fsrc%2FYmtSystem.Domain%2Fbin%2FDebug%2FYmtSystem.Domain.dll Namespace%3DYmtSystem.Domain.Specifications Type%3D(Name%3DISpecification GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="3f4745e4-fe35-471c-aaf7-d0748e6d7ec2"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

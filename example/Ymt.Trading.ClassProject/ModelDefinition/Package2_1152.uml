@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="91d12c12-b3c2-476e-80dd-6f9ea6e443f0"
+  name="Domain"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="2fc563f8-ad6c-42ee-9f44-7c5b761b3915"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DYmt.Trading.Domain"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="35d7e1bd-e5a4-4708-9f3c-d62fff855ad6"
+        LastKnownName="Model"
+        LastKnownLocation="Package3_1152.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="541ad177-9650-4cee-9d6b-a35deede2d04"
+        LastKnownName="Repository"
+        LastKnownLocation="Package16_1152.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="9a1ec4be-7e43-4f52-87bc-a263b5b32ec1"
+        LastKnownName="Event"
+        LastKnownLocation="Package26_1152.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="db217968-f95b-4c1b-a265-3a05a7c77c2b"
+        LastKnownName="Specifications"
+        LastKnownLocation="Package28_1152.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

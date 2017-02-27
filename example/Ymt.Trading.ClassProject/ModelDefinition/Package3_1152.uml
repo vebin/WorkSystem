@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="35d7e1bd-e5a4-4708-9f3c-d62fff855ad6"
+  name="Model"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="005834f5-1894-4835-9e38-dca2e3507789"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DYmt.Trading.Domain.Model"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="cfeabfe5-4a41-410f-94d5-8346655cafd6"
+        LastKnownName="Table"
+        LastKnownLocation="Package4_1152.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="638ce0bf-fbdc-451d-a40e-7fbd08fca77f"
+        LastKnownName="Account"
+        LastKnownLocation="Package8_1152.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="d7b67f19-5758-4cab-88b1-953d073fb309"
+        LastKnownName="Order"
+        LastKnownLocation="Package14_1152.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e3a21601-5de9-4294-bd1a-5a822bccfbcc"
+        LastKnownName="User"
+        LastKnownLocation="Package15_1152.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

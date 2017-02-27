@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54F1C834-CCE5-46E0-AE2B-0FD16084237E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YmtSystem.Domain</RootNamespace>
+    <AssemblyName>YmtSystem.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\global\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Event\DomainEvent.cs" />
+    <Compile Include="Event\DomainEventSubscriber.cs" />
+    <Compile Include="Event\EventSourceRootEntity.cs" />
+    <Compile Include="Event\IDomainEvent.cs" />
+    <Compile Include="Event\IDomainEventSubscriber.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AbstractUnitOfWork.cs" />
+    <Compile Include="Repository\IMultipleUnitOfWorkBuilder.cs" />
+    <Compile Include="Repository\IRepository_Context.cs" />
+    <Compile Include="Repository\IRepository_Stats.cs" />
+    <Compile Include="Repository\IRepository_AsyncQuery.cs" />
+    <Compile Include="Repository\IRepository_Query.cs" />
+    <Compile Include="Repository\IRepository_Commond.cs" />
+    <Compile Include="Repository\IUnitOfWork.cs" />
+    <Compile Include="Shard\AggregateRoot.cs" />
+    <Compile Include="Shard\DomainException.cs" />
+    <Compile Include="Shard\Entity.cs" />
+    <Compile Include="Shard\EntityValidator.cs" />
+    <Compile Include="Shard\IAggregateRoot.cs" />
+    <Compile Include="Shard\IConcurrencyCheck.cs" />
+    <Compile Include="Shard\IEntity.cs" />
+    <Compile Include="Shard\IEntityLogicDelete.cs" />
+    <Compile Include="Shard\IEntityExtend.cs" />
+    <Compile Include="Shard\IIdGenerator.cs" />
+    <Compile Include="Shard\MoneyValueObject\CanonicalCultureAttribute.cs" />
+    <Compile Include="Shard\MoneyValueObject\CharacterReference.cs" />
+    <Compile Include="Shard\MoneyValueObject\Currency.cs" />
+    <Compile Include="Shard\MoneyValueObject\CurrencyCharacterReferences.cs" />
+    <Compile Include="Shard\MoneyValueObject\CurrencyEqualityComparer.cs" />
+    <Compile Include="Shard\MoneyValueObject\CurrencyInfo.cs" />
+    <Compile Include="Shard\MoneyValueObject\CurrencyIsoCode.cs" />
+    <Compile Include="Shard\MoneyValueObject\CurrencyIsoCode.Extensions.cs" />
+    <Compile Include="Shard\MoneyValueObject\Exceptions.cs" />
+    <Compile Include="Shard\MoneyValueObject\Exchange\ExchangeConversion.cs" />
+    <Compile Include="Shard\MoneyValueObject\Exchange\Extensions\ExchangeExtensions.cs" />
+    <Compile Include="Shard\MoneyValueObject\Exchange\ExchangeRate.cs" />
+    <Compile Include="Shard\MoneyValueObject\Exchange\ExchangeSafeConversion.cs" />
+    <Compile Include="Shard\MoneyValueObject\Exchange\IExchangeConversion.cs" />
+    <Compile Include="Shard\MoneyValueObject\Exchange\IExchangeRateProvider.cs" />
+    <Compile Include="Shard\MoneyValueObject\Exchange\IExchangeSafeConversion.cs" />
+    <Compile Include="Shard\MoneyValueObject\Exchange\Money.Extensions.cs" />
+    <Compile Include="Shard\MoneyValueObject\Exchange\ProviderOfIdentities.cs" />
+    <Compile Include="Shard\MoneyValueObject\Exchange\TabulatedExchangeRateProvider.cs" />
+    <Compile Include="Shard\MoneyValueObject\Extensions\Money.Extensions.cs" />
+    <Compile Include="Shard\MoneyValueObject\Money.cs" />
+    <Compile Include="Shard\MoneyValueObject\ObsoleteCurrencies.cs" />
+    <Compile Include="Shard\MoneyValueObject\ObsoleteCurrencyEventArgs.cs" />
+    <Compile Include="Shard\MoneyValueObject\ObsoleteCurrencyEventBehavior.cs" />
+    <Compile Include="Shard\MoneyValueObject\Providers.cs" />
+    <Compile Include="Shard\MoneyValueObject\Serialization\CurrencyCodeConverter.cs" />
+    <Compile Include="Shard\MoneyValueObject\Serialization\CurrencyConverter.cs" />
+    <Compile Include="Shard\MoneyValueObject\Serialization\Data.cs" />
+    <Compile Include="Shard\MoneyValueObject\Serialization\MoneyConverter.cs" />
+    <Compile Include="Shard\MoneyValueObject\Support\Enumeration.cs" />
+    <Compile Include="Shard\MoneyValueObject\Support\Extensions.cs" />
+    <Compile Include="Shard\MoneyValueObject\Support\FastEnumComparer.cs" />
+    <Compile Include="Shard\MoneyValueObject\Support\GroupSizes.cs" />
+    <Compile Include="Shard\MoneyValueObject\Support\Guard.cs" />
+    <Compile Include="Shard\MoneyValueObject\Support\ThreadSafeCache.cs" />
+    <Compile Include="Shard\MoneyValueObject\Support\TokenizedValue.cs" />
+    <Compile Include="Shard\MoneyValueObject\Support\UnicodeSymbol.cs" />
+    <Compile Include="Shard\ValidatorResult.cs" />
+    <Compile Include="Shard\Validator\DataAnnotationsEntityValidator.cs" />
+    <Compile Include="Shard\Validator\DataAnnotationsEntityValidatorFactory.cs" />
+    <Compile Include="Shard\Validator\EntityValidatorFactory.cs" />
+    <Compile Include="Shard\Validator\IEntityValidator.cs" />
+    <Compile Include="Shard\Validator\IEntityValidatorFactory.cs" />
+    <Compile Include="Shard\ValueObject.cs" />
+    <Compile Include="Specifications\AndAlsoSpecification.cs" />
+    <Compile Include="Specifications\AndNotSpecification.cs" />
+    <Compile Include="Specifications\AndSpecification.cs" />
+    <Compile Include="Specifications\AnySpecification.cs" />
+    <Compile Include="Specifications\CompositeSpecification.cs" />
+    <Compile Include="Specifications\ExpressionFuncExtender.cs" />
+    <Compile Include="Specifications\ExpressionSpecification.cs" />
+    <Compile Include="Specifications\ICompositeSpecification.cs" />
+    <Compile Include="Specifications\ISpecification.cs" />
+    <Compile Include="Specifications\ISpecificationParser.cs" />
+    <Compile Include="Specifications\NoneSpecification.cs" />
+    <Compile Include="Specifications\NotEqualSpecification.cs" />
+    <Compile Include="Specifications\NotSpecification.cs" />
+    <Compile Include="Specifications\OrElseSpecification.cs" />
+    <Compile Include="Specifications\OrSpecification.cs" />
+    <Compile Include="Specifications\ParameterRebinder.cs" />
+    <Compile Include="Specifications\Specification.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Shard\MoneyValueObject\Currencies.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Shard\MoneyValueObject\Serialization\SerializationSchema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Specifications\re" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YmtSystem.CrossCutting\YmtSystem.CrossCutting.csproj">
+      <Project>{ae7593c5-1c9b-499c-a9e9-a3e6769494a6}</Project>
+      <Name>YmtSystem.CrossCutting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YmtSystem.Infrastructure.EventBus\YmtSystem.Infrastructure.EventBusService.csproj">
+      <Project>{ae8fc781-1144-4e2a-8730-06b146ee809e}</Project>
+      <Name>YmtSystem.Infrastructure.EventBusService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Shard\MoneyValueObject\Currencies.xml" />
+    <Content Include="Shard\MoneyValueObject\re.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
